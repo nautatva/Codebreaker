@@ -1,7 +1,7 @@
 <ol>
     <li>Always <b>comment</b> out <b>all the code dependencies</b> when you are removing something from HTML.</li>
     <li>While committing the changes, make sure you wite what all changes have you made in the code.</li>
-<ol>
+</ol>
 
 some important commands:
 <ul>
@@ -10,4 +10,5 @@ some important commands:
     <li><b> git add . :</b> stages your changes </li>
     <li><b> git commit -m "message" </b> Commits your changes with a message</li>
     <li><b> git push:</b> Pushes your changes to repo </li>
+    <li><b> git reset --hard:</b> discards all local changes   <u>USE WITH CAUTION</u></li>
 </ul>
