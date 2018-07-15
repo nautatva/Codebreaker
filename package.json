@@ -1,0 +1,53 @@
+{
+  "name": "nss-iitb-branding",
+  "version": "1.0.0",
+  "private": true,
+  "description": "branding-page",
+  "scripts": {
+    "test": "nodemon ./app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nautatva/nautatva.github.io.git"
+  },
+  "author": {
+    "name": "Team NSS web",
+    "email": "web.nssiitbombay@gmail.com",
+    "url": "https://gymkhana.iitb.ac.in/~nss/"
+  },
+  "contributors": [
+    {
+      "name": "Nautatava Navlakha",
+      "email": "nnautatva@gmail.com",
+      "url": "https://nautatva.github.io/"
+    },
+    {
+      "name": "Atharv Kotwal",
+      "email": "atharvkotwal@gmail.com"
+    },
+    {
+      "name": "Shubham Kaudewar",
+      "email": "kaudewar@gmail.com"
+    }
+  ],
+  "keywords": [
+    "nss",
+    "iit",
+    "bombay",
+    "2018"
+  ],
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/nautatva/nautatva.github.io/issues"
+  },
+  "homepage": "https://github.com/nautatva/nautatva.github.io#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "helmet": "^3.12.1",
+    "express-less": "^0.1.0",
+    "ejs": "^2.5.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
