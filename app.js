@@ -9,21 +9,26 @@ app.set('view engine', 'ejs');
 app.get('/', function(req, res, next) {
   // var active = 'index';
   res.render(
-    'views/pages/index'
+    'pages/index'
     // , {
     //   active: 'index'
     // }
   );
 });
-app.get('/views', function(req, res, next) {
-  // var active = 'index';
-  res.render(
-    'pages/departmentPage/index'
-    // , {
-    //   active: 'index'
-    // }
-  );
-});
+// app.get('/views', function(req, res, next) {
+//   // var active = 'index';
+//   res.render(
+//     'pages/departmentPage/index'
+//     // , {
+//     //   active: 'index'
+//     // }
+//   );
+// });
+
+app.use(
+  '/stylesheets',
+  expressLess(__dirname + '/public/stylesheets', { compress: true })
+);
 
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
