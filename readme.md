@@ -5,11 +5,13 @@
     <li>npm install</li>
     <li>npm test</li>
     <br>
+    ```
     <ol>
         <li>Always <b>comment</b> out <b>all the code dependencies</b> when you are removing something from HTML.</li>
         <li>While committing the changes, make sure you wite what all changes have you made in the code.</li>
     </ol>
     <br>
+    ```
     some important commands:
     <ul>
         <li><b> git status:</b> check if your code is up to date with repo before making any changes</li>
