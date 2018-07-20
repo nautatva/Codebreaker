@@ -1,6 +1,6 @@
+<b>Starting to work on repo:</b>
 
 <ul>
-Starting to work on repo:
     <li>install node js first</li>
     <li>npm install</li>
     <li>npm test</li>
