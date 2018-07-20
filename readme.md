@@ -1,13 +1,13 @@
+Starting to work on repo:
+<ul>
+    <li>install node js first</li>
+    <li>npm install</li>
+    <li>npm test</li>
+<br>
 <ol>
     <li>Always <b>comment</b> out <b>all the code dependencies</b> when you are removing something from HTML.</li>
     <li>While committing the changes, make sure you wite what all changes have you made in the code.</li>
 </ol>
-<br>
-Starting to work on repo:
-<ul>
-<li>install node js first</li>
-<li>npm install</li>
-<li>npm test</li>
 <br>
 some important commands:
 <ul>
