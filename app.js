@@ -2,28 +2,40 @@ var express = require('express');
 var expressLess = require('express-less');
 
 var app = express();
-// var path = require('path');
+var path = require('path');
 
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, res, next) {
-  // var active = 'index';
-  res.render(
-    'pages/index'
-    // , {
-    //   active: 'index'
-    // }
-  );
+  res.render('pages/index', {
+    active: 'index'
+  });
 });
-// app.get('/views', function(req, res, next) {
-//   // var active = 'index';
-//   res.render(
-//     'pages/departmentPage/index'
-//     // , {
-//     //   active: 'index'
-//     // }
-//   );
+
+app.get('/NGO', function(req, res, next) {
+  res.render('pages/index', {
+    active: 'ngo'
+  });
+});
+
+app.get('/gallery', function(req, res, next) {
+  res.render('pages/index', {
+    active: 'gallery'
+  });
+});
+
+// app.get('/', function(req, res, next) {
+//   res.render('pages/index', {
+//     active: 'index'
+//   });
 // });
+
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(
+  '/images',
+  express.static(path.join(__dirname, 'public', 'images'))
+  // expressLess(__dirname + '/public/images', { compress: true })
+);
 
 app.use(
   '/stylesheets',
