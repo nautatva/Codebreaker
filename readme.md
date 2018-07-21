@@ -1,5 +1,5 @@
 <a href="https://gymkhana.iitb.ac.in/~nss/">
-  <img align="right" width="100" height="100"  src="https://gymkhana.iitb.ac.in/~nss/assets/images/logo128.png">
+  <img align="right" width="100" height="100"  src="./public/logo128.png">
 </a>
 
 > Using ExpressJS with Pug
