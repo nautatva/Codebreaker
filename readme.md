@@ -8,8 +8,10 @@
 
 <ul>
     <li>install node js first</li>
-    <li>npm install</li>
-    <li>npm test</li>
+   ```
+  $ npm install
+  $ npm test
+  ```
     <br>
 </ul>
 
