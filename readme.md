@@ -6,15 +6,12 @@
 
 ## Get Started
 
-<ul>
-    <li>install node js first</li>
+Install node js
   
    ```
    npm install
    npm test
   ```
- 
-</ul>
 
 ## Remember
 
