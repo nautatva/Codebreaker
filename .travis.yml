@@ -2,6 +2,8 @@ language: node_js
 node_js:
   - "iojs"
   - "lts/*"
-  cache:
+cache:
   directories:
     - "node_modules"
+deploy:
+  skip_cleanup: true
