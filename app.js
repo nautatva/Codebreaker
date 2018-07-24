@@ -24,12 +24,6 @@ app.get('/gallery', function(req, res, next) {
   });
 });
 
-// app.get('/', function(req, res, next) {
-//   res.render('pages/index', {
-//     active: 'index'
-//   });
-// });
-
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(
   '/images',
