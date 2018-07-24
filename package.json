@@ -1,6 +1,9 @@
 {
   "name": "nss-iitb-branding",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.4.1"
+  },
   "private": true,
   "description": "branding-page",
   "scripts": {
