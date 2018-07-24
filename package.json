@@ -7,6 +7,7 @@
   "private": true,
   "description": "branding-page",
   "scripts": {
+    "test": "nodemon ./app",
     "start": "nodemon ./app"
   },
   "repository": {
