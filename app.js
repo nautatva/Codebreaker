@@ -3,6 +3,7 @@ var expressLess = require('express-less');
 
 var app = express();
 var path = require('path');
+const PORT = process.env.PORT || 3000;
 
 app.set('view engine', 'ejs');
 
@@ -42,4 +43,6 @@ app.use(function(req, res, next) {
   next(err);
 });
 
-app.listen(3000);
+app.listen(PORT, () => {
+  console.log(`Server is listening on port ${PORT}`);
+});
