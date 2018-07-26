@@ -1,32 +1,27 @@
-<a href="https://gymkhana.iitb.ac.in/~nss/">
-  <img align="right" width="100" height="100"  src="./public/logo128.png">
-</a>
+# Angular
 
-> Using ExpressJS with Pug
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
-## Get Started
+## Development server
 
-Install node js
-  
-   ```
-   npm install
-   npm test
-  ```
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Remember
+## Code scaffolding
 
-<ol>
-    <li>Always <b>comment</b> out <b>all the code dependencies</b> when you are removing something from HTML.</li>
-    <li>While committing the changes, make sure you wite what all changes have you made in the code.</li>
-</ol>
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## some important commands:
+## Build
 
-<ul>
-    <li><b> git status:</b> check if your code is up to date with repo before making any changes</li>
-    <li><b> git pull: </b> pull changes first if you are behind before making changes</li>
-    <li><b> git add . :</b> stages your changes </li>
-    <li><b> git commit -m "message" </b> Commits your changes with a message</li>
-    <li><b> git push:</b> Pushes your changes to repo </li>
-    <li><b> git reset --hard:</b> discards all local changes   <u>USE WITH CAUTION</u></li>
-    </ul>
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
