@@ -3,10 +3,10 @@ node_js:
   - "lts/*"
 
 before_script:
-  - npm install -g @angular/cli
+  - npm install
 
 script:
-  - ng build --prod
+  - npm run prod
 
 notifications:
   email: # only receive email when the build status changes (someone broke the build!) 
@@ -14,7 +14,7 @@ notifications:
     on_success: change   
 
 deploy:
-  local-dir: dist
+  local-dir: dist/angular
   provider: pages
   skip-cleanup: true
   github-token: 7181f6c8e43ef822987d131c641767d649766546   # Set in the settings page of your repository, as a secure variable
