@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/nautatva/Codebreaker.svg?token=pKMxEv6xXP6Wq3WsQSNF&branch=master)](https://travis-ci.com/nautatva/Codebreaker)
+
 # Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
