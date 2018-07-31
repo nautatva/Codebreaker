@@ -14,6 +14,7 @@ notifications:
     on_success: change   
 
 deploy:
+  local-dir: dist
   provider: pages
   skip-cleanup: true
   github-token: 7181f6c8e43ef822987d131c641767d649766546   # Set in the settings page of your repository, as a secure variable
