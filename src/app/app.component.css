@@ -6,7 +6,7 @@
   height: 88vh;
 }
 .intro .dotted-background {
-  background-image: url('../assets/pattern.svg');
+  background-image: url('/assets/pattern.svg');
   position: absolute;
   height: 70%;
   width: 100%;
@@ -16,7 +16,15 @@
   background-size: 2%;
 }
 .intro .overlay-background {
-  background-image: linear-gradient(-180deg, #ffffff 0%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.6) 100%, #ffffff 100%);
+  background-image: linear-gradient(
+    -180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0.6) 100%,
+    #ffffff 100%
+  );
   position: absolute;
   height: 70%;
   width: 100%;

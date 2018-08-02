@@ -46,8 +46,8 @@ nav .identity p {
   list-style-type: none;
   padding: 0.5rem 0rem 0.5rem 0;
 }
-.navbar-contents li:focus,
-.navbar-contents li:hover {
+.navbar-contents li a:focus,
+.navbar-contents li a:hover {
   border-bottom: 2px solid #284a86;
 }
 .navbar-contents li a {
