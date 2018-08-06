@@ -44,12 +44,42 @@
   width: 40%;
   height: 40%;
 }
-.two {
-  height: 80vh;
-  background: #f8f8f8;
+.template{
+  height: 500px
 }
-
+.two{
+  width: 50%;
+  background: #fff;
+  height:400px;
+}
+.two #twoImg {
+  border-style: groove;
+  border-radius: 50px 25px;
+  height:400px;
+  width: 100%;
+}
 .main{
   display: flex;
   flex-direction: row;
+}
+.one{
+  color: #0099ff;
+  background: #00264d;
+  border-radius: 15px 50px;
+  font-family: Arial,monaco,monospace;
+  height: 390px;
+  font-weight: auto;
+  text-align: center;
+  border-width: 4px;
+  font-size: 1.5rem;
+  width: 40%;
+  box-shadow: 0 10px 20px 0 rgba(47, 35, 202, 0.2), 0 20px 40px 0 rgba(90, 40, 206, 0.19);
+  margin-right: 20px;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.one-title
+{
+  font-size: 2.5rem;
 }
