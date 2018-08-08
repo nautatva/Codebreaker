@@ -9,7 +9,7 @@ script:
   - npm run prod
 
 after_script:
-  - npx ngh --dir=/
+  - npx ngh --repo=https://7181f6c8e43ef822987d131c641767d649766546@github.com/nautatva/Codebreaker.git  --name="nautatva" --email='nnautatva@gmail.com' --dir=/
 
 notifications:
   email: # only receive email when the build status changes (someone broke the build!)
