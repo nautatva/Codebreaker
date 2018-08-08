@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - 'lts/*'
+  - 'v10.7.0'
 
 before_script:
   - npm install
@@ -9,7 +9,7 @@ script:
   - npm run prod
 
 after_script:
-  - npx ngh
+  - npx ngh --dir=/
 
 notifications:
   email: # only receive email when the build status changes (someone broke the build!)
