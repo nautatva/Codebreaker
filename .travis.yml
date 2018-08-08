@@ -9,7 +9,7 @@ script:
   - npm run prod
 
 after_script:
-  - npx ngh --dir=dist/Codebreaker
+  - npx ngh
 
 notifications:
   email: # only receive email when the build status changes (someone broke the build!)
