@@ -20,4 +20,4 @@ deploy:
   github-token: 7181f6c8e43ef822987d131c641767d649766546   # Set in the settings page of your repository, as a secure variable
   keep-history: true
   on:
-    branch: master
+    all_branches: true
