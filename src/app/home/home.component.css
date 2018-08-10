@@ -93,5 +93,9 @@
   padding-right: 20px;
 }
 .cards{
-  
+
+}
+.textlink{
+  text-decoration: none;
+  color: yellow;
 }
