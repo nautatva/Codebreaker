@@ -47,11 +47,11 @@
 
 /* cards start here */
 /* changed - added this comment */
-.two{
+.left-card{
   background: #fff;
   height:400px;
 }
-.two #twoImg {
+.left-card #left-cardImg {
   border-width: 5px;
   border-style: dashed;
   border-color: #0099ff;
@@ -63,7 +63,7 @@
   display: flex;
   flex-direction: row;
 }
-.one{
+.right-card{
   color: #0099ff;
   background: #00264d;
   border-radius: 15px 50px;
@@ -75,15 +75,15 @@
   margin-right: 20px;
   line-height: 300px;
 }
-.one-title
+.right-card-title
 {
   font-size: 3rem;
 }
-.flex-container {
+.card {
   flex-direction: row;
   display: flex;
 }
-.flex-container > div{
+.card > div{
   height: 400px;
   line-height: 39px;
   width: 50%;
