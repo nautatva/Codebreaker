@@ -7,23 +7,31 @@
 .in{
     display: flex;
     flex-direction: column;
+    /* width: 100%; */
+    margin:10px;
+    flex-basis: 100%;
 }
 .in > div{
     background-color: rgb(144, 211, 238);
     margin: 10px;
     color: red;
-    height: 100%;
+    /* flex-grow: 2; */
+    /* width: 100%; */
+    height: 50%;
 }
 .flex-container > div {
     background-color: orange;
     color: brown;
     width: 50%;
-    height: 100%;
     margin: 10px;
     /* height: 50%; */
     /* text-align: center;
     line-height: 75px;
     font-size: 35px; */
+  }
+marquee{
+      margin: 20px;
+      color: darkblue;
   }
   /* .head{
       height: 100%;
