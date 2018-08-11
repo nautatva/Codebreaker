@@ -33,6 +33,7 @@ marquee{
       margin: 20px;
       color: darkblue;
       height: 25%;
+      line-height: 200%;
   }
   /* .head{
       height: 100%;
