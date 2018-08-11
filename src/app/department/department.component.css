@@ -1,0 +1,31 @@
+.flex-container {
+    display: flex;
+    background-color: #f1f1f1;
+    border: 2px black ;
+    height: 600px;
+}
+.in{
+    display: flex;
+    flex-direction: column;
+}
+.in > div{
+    background-color: rgb(144, 211, 238);
+    margin: 10px;
+    color: red;
+    height: 100%;
+}
+.flex-container > div {
+    background-color: orange;
+    color: brown;
+    width: 50%;
+    height: 100%;
+    margin: 10px;
+    /* height: 50%; */
+    /* text-align: center;
+    line-height: 75px;
+    font-size: 35px; */
+  }
+  /* .head{
+      height: 100%;
+
+  } */
