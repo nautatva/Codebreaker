@@ -7,7 +7,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 const routes: Routes = [
   { path: 'departments', component: DepartmentComponent },
   { path: '', component: HomeComponent },
-  { patj: 'gallery', component: GalleryComponent },
+  { path: 'gallery', component: GalleryComponent },
   { path: '**', redirectTo: '' }
 ];
 
