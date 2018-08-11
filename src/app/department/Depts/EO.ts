@@ -1,15 +1,15 @@
 import { Dept,Team,Link } from './dept';
 const myteam:Team[]=[
-    {name:"Atharv Kotwal"},
-    {name:"Atharv"}
+    {name:"Abcd Efgh"},
+    {name:"ABCDEFGH "}
 ]
 const mylinks:Link[]=[
-    {linkname:"Link 1",linkhref:"#"},
-    {linkname:"Link 2",linkhref:"#"},
-    {linkname:"Link 3",linkhref:"#"},
+    {linkname:"YouTube",linkhref:"https://www.youtube.com/"},
+    {linkname:"Link 5",linkhref:"#"},
+    {linkname:"Link 6",linkhref:"#"},
 ]
 export const EO:Dept = {
-    deptname : "Green Campus",
+    deptname : "Educational Outreach",
     team:myteam,
     links:mylinks
 }

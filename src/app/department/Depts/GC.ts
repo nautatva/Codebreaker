@@ -5,7 +5,7 @@ const myteam:Team[]=[
 ]
 const mylinks:Link[]=[
     {linkname:"Link 1",linkhref:"#"},
-    {linkname:"Link 2",linkhref:"#"},
+    {linkname:"google",linkhref:"https://www.google.co.in/"},
     {linkname:"Link 3",linkhref:"#"},
 ]
 export const GC:Dept = {

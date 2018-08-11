@@ -1,3 +1,6 @@
+import {GC} from './GC';
+import {EO} from './EO';
+
 export class Link{
     linkname:string;
     linkhref:string;
@@ -14,3 +17,8 @@ export class Dept{
     links:Link[];
     pic?:string;
 }
+
+export const depts:Dept[] = [
+    GC,
+    EO
+]

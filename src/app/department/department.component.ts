@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {depts,Dept } from './Depts/dept';
 
 @Component({
   selector: 'app-department',
@@ -11,5 +12,5 @@ export class DepartmentComponent implements OnInit {
 
   ngOnInit() {
   }
-  department = 'Green Campus'
+  mydepts:Dept[] = depts;
 }

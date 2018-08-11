@@ -1,28 +1,22 @@
-<ng-container>
+<ng-container *ngFor="let d of mydepts">
 <div class="flex-container">
     <div class="in">
         <div>
-            <h1>{{department}}</h1>
+            <h1>{{d.deptname}}</h1>
         </div>
         <div>
             <h3>Team Members</h3>
             <ul>
-                <li>Atharv Kotwal</li>
-                <li>Atharv Kotwal</li>
-                <li>Atharv Kotwal</li>
+                <li *ngFor="let t of d.team">{{t.name}}</li>
             </ul>
         </div>
     </div>
     <div> </div>
     <div>
         <h3> Important Links </h3>
-        <marquee behavior="scroll" direction="up">
+        <marquee behavior="scroll" direction="up" onmouseover="this.stop()" onmouseout="this.start()">
             <ul>
-                <li>Link 1</li>
-                <li>Link 2</li>
-                <li>Link 3</li>
-                <li>Link 4</li>
-                <li>Link 5</li>
+                <li *ngFor="let l of d.links"><a href="{{l.linkhref}}">{{l.linkname}}</a></li>
             </ul>
         </marquee>
     </div>
