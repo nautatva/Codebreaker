@@ -47,35 +47,40 @@
 
 /* cards start here */
 /* changed - added this comment */
-.left-card{
+.leftCard{
   background: #fff;
-  height:400px;
+  height: 25rem;
+  flex-basis: 500px;
+  flex-shrink: 1;
+  flex-grow: 1;
 }
-.left-card #left-cardImg {
-  border-width: 5px;
+.leftCard #leftCardImg {
+  border-width: 2px;
   border-style: dashed;
-  border-color: #0099ff;
+  border-color: black;
   border-radius: 50px 25px;
-  height:400px;
-  width: 100%;
+  height:25rem;
 }
 .main{
   display: flex;
   flex-direction: row;
 }
-.right-card{
+.rightCard{
+  flex-basis: 500px;
+  flex-grow: 1;
+  flex-shrink: 1;
   color: #0099ff;
   background: #00264d;
-  border-radius: 15px 50px;
+  border-radius: 0.9375rem 3.125rem;
   font-family: Arial,monaco,monospace;
   text-align: center;
-  border-width: 4px;
-  font-size: 1.4rem;
+  border-width: 0.25rem;
+  font-size: 1.25rem;
   box-shadow: 0 10px 20px 0 rgba(47, 35, 202, 0.2), 0 20px 40px 0 rgba(90, 40, 206, 0.19);
-  margin-right: 20px;
-  line-height: 300px;
+  margin-right: 1.25rem;
+  line-height: 18.75rem;
 }
-.right-card-title
+.rightCardTitle
 {
   font-size: 3rem;
 }
@@ -84,13 +89,12 @@
   display: flex;
 }
 .card > div{
-  height: 400px;
+  height: 25rem;
   line-height: 39px;
-  width: 50%;
   text-align: center;
   margin: 2%;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 .cards{
 
