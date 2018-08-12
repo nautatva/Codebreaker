@@ -10,9 +10,7 @@ cache:
 
 script:
   - npm run prod
-
-after_script:
-  - npx ngh --repo=https://7181f6c8e43ef822987d131c641767d649766546@github.com/nautatva/Codebreaker.git  --name="nautatva" --email='nnautatva@gmail.com' --dir=/
+  - npx ngh --dir=/dist/Codebreaker
   - echo $PWD
   - ls
 
