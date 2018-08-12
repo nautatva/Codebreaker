@@ -10,7 +10,7 @@ cache:
 
 script:
   - npm run prod
-  - npx ngh --dir=/dist/Codebreaker
+  - cp /dist/Codebreaker/index.html /dist/Codebreaker/404.html
   - echo $PWD
   - ls
 
