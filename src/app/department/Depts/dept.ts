@@ -1,9 +1,9 @@
 import {GC} from './GC';
 import {EO} from './EO';
 
-export class Img{
-    img:string;
-    imghref:string;
+export class Link{
+    linkname:string;
+    linkhref:string;
 }
 export class Team{
     name:string;
@@ -14,7 +14,7 @@ export class Dept{
     deptid?:number;
     deptname:string;
     team:Team[];
-    images:Img[];
+    links:Link[];
     pic?:string;
 }
 

@@ -22,16 +22,18 @@
 .flex-container > div {
     background-color: orange;
     color: brown;
-    width: 70%;
+    width: 50%;
     margin: 10px;
     /* height: 50%; */
     /* text-align: center;
     line-height: 75px;
     font-size: 35px; */
   }
-.carousel{
+marquee{
       margin: 20px;
-      height: initial;
+      color: darkblue;
+      height: 25%;
+      line-height: 200%;
   }
   /* .head{
       height: 100%;

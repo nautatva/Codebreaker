@@ -1,24 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { depts, Dept } from './Depts/dept';
-import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import {depts,Dept } from './Depts/dept';
 
 @Component({
-  selector: 'app-department,ngbd-carousel-basic',
+  selector: 'app-department',
   templateUrl: './department.component.html',
-  styleUrls: ['./department.component.css'],
-  providers: [NgbCarouselConfig]
+  styleUrls: ['./department.component.css']
 })
 export class DepartmentComponent implements OnInit {
-  mydepts: Dept[];
-  showNavigationArrows = true;
-  showNavigationIndicators = true;
-  constructor(config: NgbCarouselConfig) {
-    config.showNavigationArrows = true;
-    config.showNavigationIndicators = true;
-  }
+
+  constructor() { }
 
   ngOnInit() {
-    this.mydepts = depts;
   }
-
+  mydepts:Dept[] = depts;
 }
