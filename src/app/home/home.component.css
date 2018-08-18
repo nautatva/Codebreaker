@@ -1,0 +1,85 @@
+.center {
+  display: flex;
+  justify-content: center;
+}
+.intro {
+  height: 88vh;
+  /* height: 660px; */
+}
+.intro .dotted-background {
+  background-image: url('/assets/home/pattern.svg');
+  position: absolute;
+  height: 70%;
+  width: 100%;
+  top: 130px;
+  left: 0px;
+  z-index: -20;
+  background-size: 2%;
+}
+
+.intro .overlay-background {
+  background-image: linear-gradient(
+    -180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0.6) 100%,
+    #ffffff 100%
+  );
+  position: absolute;
+  height: 70%;
+  width: 100%;
+  top: 130px;
+  left: 0px;
+  z-index: -10;
+}
+.intro .introText {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  z-index: -12;
+}
+.intro #introImg {
+  padding-top: 30vh;
+  width: 40%;
+  height: 40%;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  min-width: 300px;
+  margin: 3rem 1rem 0 1rem;
+  border: 1px solid #f1f1f1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.1s;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card > .text {
+  padding: 2px 16px;
+}
+
+.card > .text > .cardTitle {
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
+.card > .cardDescription {
+  margin-top: 0;
+}
+
+.card > .image > .cardImg {
+  border-radius: 4px 4px 0 0;
+  max-width: 100%;
+}
