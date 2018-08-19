@@ -4,21 +4,7 @@
   margin-right: auto;
   margin-left: auto;
 }
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 910px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
+
 nav {
   overflow: hidden;
   display: flex;
@@ -60,17 +46,37 @@ nav .identity img{
   text-decoration: none;
   color: black;
 }
-.button{
+
+/* .button{
   width: 100%;
   background: #284a86;
   padding: 10px 20px;
   text-align: right;
   font-size: 30px;
   display: none;
-  color: #fff;
+  color: #fff; 
+}*/
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 910px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
 
-@media (max-width:768px){
+@media (max-width:630px){
+  nav{
+    flex-direction: column;
+  }
   nav ul{
     display: block;
   }
