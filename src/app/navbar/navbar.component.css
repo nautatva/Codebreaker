@@ -16,6 +16,10 @@ nav a {
 nav .navbar-right {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+nav .hamburger{
+  display: none;
 }
 nav .identity {
   display: flex;
@@ -27,6 +31,7 @@ nav .identity p {
 }
 nav .identity img{
   padding-top: 0.5rem; 
+  justify-content: flex-end;
 }
 .navbar-contents {
   display: flex;
@@ -56,7 +61,6 @@ nav .identity img{
   display: none;
   color: #fff; 
 }*/
-
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -78,10 +82,22 @@ nav .identity img{
     flex-direction: column;
   }
   nav ul{
-    display: block;
+    display: none;
   }
   nav li{
     text-align: center;
     width: 100%;
+  }
+  nav .hamburger{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  }
+  .shortView{
+    display: flex;
+    justify-content: space-between;
+  }
+  .active{
+    display: inline-block;
   }
 }
