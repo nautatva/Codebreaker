@@ -11,9 +11,7 @@ before_script:
 script:
   - npm run prod
   - cp dist/Codebreaker/index.html dist/Codebreaker/404.html
-  - echo $PWD
-  - ls
-
+  
 notifications:
   email: # only receive email when the build status changes (someone broke the build!)
     on_failure: change
