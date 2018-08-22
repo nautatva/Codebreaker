@@ -1,9 +1,16 @@
+.nav-container{
+  margin-top: 1rem;
+}
 .container {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
+p{
+  margin-bottom: 0;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -32,6 +39,7 @@ nav .navbar-right {
 }
 nav .identity {
   display: flex;
+  align-items: center;
 }
 nav .identity p {
   padding-left: 1rem;
