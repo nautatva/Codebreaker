@@ -1,36 +1,48 @@
-<!-- import { NgxCarousel } from 'ngx-carousel'; -->
+<ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+        <h4 class="modal-title">Description of Food Item</h4>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <p *ngIf="description; else nodescription">{{description}}</p>
+        <img src="{{image}}" alt="Image not Available" style="width:100% ;height: auto;">
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
+    </div>
+</ng-template>
+<ng-template #nodescription>
+    <p>No Description Available</p>
+</ng-template>
+<ng-container *ngFor="let dept of mydepts">
+    <div class="flex-container">
+        <div class="left">
+            <div (click)="openWindowCustomClass(content,dept.description,dept.img)" style="cursor: pointer;">
+                <h1>{{dept.deptname}}</h1>
+            </div>
+            <div>
+                <h3>Team Members</h3>
+                <ul>
+                    <li *ngFor="let t of dept.team">{{t.name}}</li>
+                </ul>
+            </div>
+        </div>
 
-<h1>{{department}}
-</h1>
-<!-- <iframe src="https://www.google.com/maps/d/embed?mid=1tKLHHlsHTlKBHj80rjbT0U45_Z27C8YF" width="640" height="480"></iframe> -->
-
-<!-- <ngb-carousel *ngIf="images">
-  <ng-template ngbSlide>
-    <img [src]="images[0]" alt="Random first slide">
-    <div class="carousel-caption">
-      <h3>10 seconds between slides...</h3>
-      <p>This carousel uses customized default values.</p>
+        <div class="right">
+            <h3> Important Links </h3>
+            <ngb-carousel *ngIf="dept.imglinks">
+                <ng-template ngbSlide *ngFor="let image of dept.imglinks">
+                    <a [href]="image.linkhref">
+                        <img [src]="image.linkimg" alt="{{image.linkname}}">
+                        <div class="carousel-caption">
+                            <h3>{{image.linkname}}</h3>
+                            <p>This is a Carousel.</p>
+                        </div>
+                    </a>
+                </ng-template>
+            </ngb-carousel>
+        </div>
     </div>
-  </ng-template>
-  <ng-template ngbSlide>
-    <img [src]="images[1]" alt="Random second slide">
-    <div class="carousel-caption">
-      <h3>No mouse events...</h3>
-      <p>This carousel doesn't pause or resume on mouse events</p>
-    </div>
-  </ng-template>
-  <ng-template ngbSlide>
-    <img [src]="images[2]" alt="Random third slide">
-    <div class="carousel-caption">
-      <h3>No keyboard...</h3>
-      <p>This carousel uses customized default values.</p>
-    </div>
-  </ng-template>
-  <ng-template ngbSlide>
-    <img [src]="images[3]" alt="Random fourth slide">
-    <div class="carousel-caption">
-      <h3>And no wrap after last slide.</h3>
-      <p>This carousel uses customized default values.</p>
-    </div>
-  </ng-template>
-</ngb-carousel> -->
+</ng-container>
