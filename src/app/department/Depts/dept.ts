@@ -1,9 +1,10 @@
 import {GC} from './GC';
 import {EO} from './EO';
 
-export class Link{
+export class Imglink{
     linkname:string;
     linkhref:string;
+    linkimg?:string;
 }
 export class Team{
     name:string;
@@ -14,8 +15,9 @@ export class Dept{
     deptid?:number;
     deptname:string;
     team:Team[];
-    links:Link[];
-    pic?:string;
+    imglinks:Imglink[];
+    img?:string;
+    description;
 }
 
 export const depts:Dept[] = [

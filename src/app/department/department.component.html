@@ -1,24 +1,46 @@
-<ng-container *ngFor="let d of mydepts">
-<div class="flex-container">
-    <div class="in">
-        <div>
-            <h1>{{d.deptname}}</h1>
+<ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+        <h4 class="modal-title">Description of Food Item</h4>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <p *ngIf="description; else nodescription">{{description}}</p>
+        <img src="{{image}}" alt="Image not Available" style="width:100% ;height: auto;">
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
+    </div>
+</ng-template>
+<ng-template #nodescription>
+    <p>No Description Available</p>
+</ng-template>
+<ng-container *ngFor="let dept of mydepts">
+    <div class="flex-container">
+        <div class="left">
+            <div (click)="openWindowCustomClass(content,dept.description,dept.img)" style="cursor: pointer;">
+                <h1>{{dept.deptname}}</h1>
+            </div>
+            <div>
+                <h3>Team Members</h3>
+                <ul>
+                    <li *ngFor="let t of dept.team">{{t.name}}</li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <h3>Team Members</h3>
-            <ul>
-                <li *ngFor="let t of d.team">{{t.name}}</li>
-            </ul>
+
+        <div class="right">
+            <h3> Important Links </h3>
+            <ngb-carousel *ngIf="dept.imglinks">
+                <ng-template ngbSlide *ngFor="let image of dept.imglinks">
+                    <img [src]="image.linkimg" alt="{{image.linkname}}" style="max-width: 100%;">
+                    <div class="carousel-caption">
+                        <h3>No mouse navigation</h3>
+                        <p>This carousel hides navigation arrows and indicators.</p>
+                    </div>
+                </ng-template>
+            </ngb-carousel>
         </div>
     </div>
-    <div> </div>
-    <div>
-        <h3> Important Links </h3>
-        <marquee behavior="scroll" direction="up" onmouseover="this.stop()" onmouseout="this.start()">
-            <ul>
-                <li *ngFor="let l of d.links"><a href="{{l.linkhref}}">{{l.linkname}}</a></li>
-            </ul>
-        </marquee>
-    </div>
-</div>
 </ng-container>
