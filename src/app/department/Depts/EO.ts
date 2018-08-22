@@ -13,5 +13,5 @@ export const EO:Dept = {
     team:myteam,
     imglinks:mylinks,
     description:"We Teach",
-    img:"../assets/ganeshaidol.jpg"
+    img:"assets/ganeshaidol.jpg"
 }

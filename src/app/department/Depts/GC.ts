@@ -13,5 +13,5 @@ export const GC:Dept = {
     team:myteam,
     imglinks:mylinks,
     description:"We plant",
-    img:"../assets/VFP/VFP.png"
+    img:"assets/VFP/VFP.png"
 }
