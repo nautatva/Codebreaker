@@ -23,11 +23,13 @@
 .deptCard{
         display:flex;
         flex-direction: column;
+        justify-content: start;
 }
 .Cards{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: start;
     flex-direction: row;
+
 }
 .leftCard{
     display: flex;
@@ -209,7 +211,16 @@ a{
         justify-content: space-evenly;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 750px;
+        }
+        .leftCard{
+            width: 100%;
+        }
+        .rightCard{
+            width: 100%;
+        }
+        .activityImg>img{
+            width: 100%;
+            height: auto;
         }
     }
   @media (max-width: 992px) {
@@ -218,7 +229,16 @@ a{
         justify-content: space-evenly;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 910px;
+    }
+    .leftCard{
+        width: 100%;
+    }
+    .rightCard{
+        width: 100%;
+    }
+    .activityImg>img{
+        width: 100%;
+        height: auto;
     }
   }
   @media (max-width: 1200px) {
@@ -227,6 +247,15 @@ a{
         justify-content: space-evenly;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 1170px;
+    }
+    .leftCard{
+        width: 100%;
+    }
+    .rightCard{
+        width: 100%;
+    }
+    .activityImg>img{
+        width: 100%;
+        height: auto;
     }
   }
