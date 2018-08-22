@@ -34,10 +34,11 @@
     line-height: 75px;
     font-size: 35px; */
 }
-marquee {
-  margin: 20px;
-  color: darkblue;
-  height: 80%;
+img{
+  /* margin: 5px,5px ; */
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 96%;
 }
 /* Modal CSS */
 .dark-modal .modal-content {
@@ -65,4 +66,9 @@ button:disabled {
   background-color: #eee;
   color: #ccc;
   cursor: auto;
+}
+/* Carousel */
+h1 .carousel-caption{
+  color: blue;
+  font-size: 125%;
 }

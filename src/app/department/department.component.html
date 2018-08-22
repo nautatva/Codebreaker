@@ -34,11 +34,13 @@
             <h3> Important Links </h3>
             <ngb-carousel *ngIf="dept.imglinks">
                 <ng-template ngbSlide *ngFor="let image of dept.imglinks">
-                    <img [src]="image.linkimg" alt="{{image.linkname}}" style="max-width: 100%;">
-                    <div class="carousel-caption">
-                        <h3>No mouse navigation</h3>
-                        <p>This carousel hides navigation arrows and indicators.</p>
-                    </div>
+                    <a [href]="image.linkhref">
+                        <img [src]="image.linkimg" alt="{{image.linkname}}">
+                        <div class="carousel-caption">
+                            <h3>{{image.linkname}}</h3>
+                            <p>This is a Carousel.</p>
+                        </div>
+                    </a>
                 </ng-template>
             </ngb-carousel>
         </div>
