@@ -51,7 +51,9 @@ nav .identity img{
   text-decoration: none;
   color: black;
 }
-
+.navbar-contents .active {
+  border-bottom: 2px solid #284a86;
+}
 /* .button{
   width: 100%;
   background: #284a86;
