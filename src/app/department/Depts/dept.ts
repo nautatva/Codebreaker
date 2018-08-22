@@ -5,6 +5,7 @@ export class Imglink{
     linkname:string;
     linkhref:string;
     linkimg?:string;
+    linkdescription?:string;
 }
 export class Team{
     name:string;

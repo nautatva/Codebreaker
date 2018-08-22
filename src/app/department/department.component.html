@@ -31,18 +31,48 @@
         </div>
 
         <div class="right">
-            <h3> Important Links </h3>
+            <!-- <h3> Important Links </h3> -->
             <ngb-carousel *ngIf="dept.imglinks">
-                <ng-template ngbSlide *ngFor="let image of dept.imglinks">
-                    <a [href]="image.linkhref">
-                        <img [src]="image.linkimg" alt="{{image.linkname}}">
+                <ng-template ngbSlide *ngFor="let image of dept.imglinks" >
+                    <!-- <a [href]="image.linkhref"> -->
+                        <!-- <img [src]="image.linkimg" alt="{{image.linkname}}">
                         <div class="carousel-caption">
                             <h3>{{image.linkname}}</h3>
                             <p>This is a Carousel.</p>
+                        </div> -->
+                        <div class="activity" (click)="openWindowCustomClass(content,image.linkdescription,image.linkimg)">
+                                <div class="activityImg">
+                                  <img [src]="image.linkimg" [alt]="image.linkname">
+                                </div>
+                                <div class="activityTitle">{{image.linkname}}</div>
+                                <div class="activityContent">{{image.linkdescription}} </div>
                         </div>
-                    </a>
+                    <!-- </a> -->
                 </ng-template>
             </ngb-carousel>
         </div>
     </div>
 </ng-container>
+<!-- <div class="rightCard_2">
+        <div class="activity">
+          <div class="activityImg">
+            <img src="assets/home/cardimg/GC_Col.JPG">
+          </div>
+          <div class="activityTitle">Collection of Saplings</div>
+          <div class="activityContent">
+            We collect naturally grown saplings in the institute and grow them in our Nursery in plastic covers till they are self dependant
+            to grow in land.
+          </div>
+        </div>
+
+        <div class="activity">
+          <div class="activityImg">
+            <img src="assets/home/cardimg/GC_trans.jpg">
+          </div>
+          <div class="activityTitle">Transplantation</div>
+          <div class="activityContent">
+            We identify the areas which lack green cover inside institute and transplant the tree saplings over there. We have had plantations
+            in the area around hostel-15 recently, which was severely lacking green cover due to multiple construction activities.
+          </div>
+        </div>
+      </div> -->

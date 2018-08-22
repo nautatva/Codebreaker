@@ -4,9 +4,9 @@ const myteam:Team[]=[
     {name:"ABCDEFGH "}
 ]
 const mylinks:Imglink[]=[
-    {linkname:"YouTube",linkhref:"https://www.youtube.com/",linkimg:"assets/ganeshaidol.jpg"},
-    {linkname:"Link 5",linkhref:"#",linkimg:"assets/VFP/VFP.png"},
-    {linkname:"Link 6",linkhref:"#",linkimg:"assets/verdade.jpg"},
+    {linkname:"Voice For Purpose",linkhref:"#",linkimg:"assets/VFP/VFP.png",linkdescription:" Hey There I am Using WhatsApp"},
+    {linkname:"Link 5",linkhref:"#",linkimg:"assets/VFP/VFP.png",linkdescription: "  "},
+    {linkname:"Link 6",linkhref:"#",linkimg:"assets/verdade.jpg",linkdescription:" "},
 ]
 export const EO:Dept = {
     deptname : "Educational Outreach",
