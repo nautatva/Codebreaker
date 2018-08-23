@@ -1,3 +1,7 @@
+/* div{
+  background-image: url("../../assets/woodimage.jpg");
+  background-attachment: fixed;
+} */
 .cards {
   display: flex;
   flex-direction: row;
@@ -49,4 +53,15 @@
   letter-spacing: 1px;
   /* font-weight: bold; */
   /* padding-top: 1rem; */
+}
+/* Carousel and Modal */
+#carousel{
+  width: 120%;
+  height:38rem;
+}
+.carousel-control-prev-icon{
+  background:red;
+}
+.carousel-control-next-icon{
+ background-image:blue;
 }
