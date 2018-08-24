@@ -4,6 +4,13 @@
   margin-right: auto;
   margin-left: auto;
 }
+#overlay{
+  
+  position: fixed;
+  top: 0;
+  width: 70%;
+  height: 100%;
+}
 
 nav {
   overflow: hidden;
@@ -18,7 +25,7 @@ nav .navbar-right {
   align-items: center;
   justify-content: center;
 }
-nav .hamburger{
+nav #hamburger{
   display: none;
 }
 nav .identity {
@@ -90,7 +97,7 @@ nav .identity img{
     text-align: center;
     width: 100%;
   }
-  nav .hamburger{
+  nav #hamburger{
   display: flex;
   justify-content: flex-end;
   align-items: center;
