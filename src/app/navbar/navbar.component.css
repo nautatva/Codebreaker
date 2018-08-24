@@ -7,26 +7,16 @@
   margin-right: auto;
   margin-left: auto;
 }
-p{
-  margin-bottom: 0;
+#overlay{
+  
+  position: fixed;
+  top: 0;
+  width: 70%;
+  height: 100%;
 }
 
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 910px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
 nav {
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
 }
@@ -36,14 +26,23 @@ nav a {
 nav .navbar-right {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+nav #hamburger{
+  display: none;
 }
 nav .identity {
   display: flex;
   align-items: center;
 }
 nav .identity p {
+  padding-top: 0.5rem;
   padding-left: 1rem;
   color: #00153a;
+}
+nav .identity img{
+  padding-top: 0.5rem; 
+  justify-content: flex-end;
 }
 .navbar-contents {
   display: flex;
@@ -65,4 +64,53 @@ nav .identity p {
 }
 .navbar-contents .active {
   border-bottom: 2px solid #284a86;
+}
+/* .button{
+  width: 100%;
+  background: #284a86;
+  padding: 10px 20px;
+  text-align: right;
+  font-size: 30px;
+  display: none;
+  color: #fff; 
+}*/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 910px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (max-width:630px){
+  nav{
+    flex-direction: column;
+  }
+  nav ul{
+    display: none;
+  }
+  nav li{
+    text-align: center;
+    width: 100%;
+  }
+  nav #hamburger{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  }
+  .shortView{
+    display: flex;
+    justify-content: space-between;
+  }
+  .active{
+    display: inline-block;
+  }
 }

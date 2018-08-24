@@ -6,12 +6,12 @@ const myteam:Team[]=[
 const mylinks:Imglink[]=[
     {linkname:"Ganesh Idol",linkhref:"#",linkimg:"assets/ganeshaidol.jpg"},
     {linkname:"Google",linkhref:"https://www.google.co.in/",linkimg:"assets/verdade.jpg"},
-    {linkname:"Voice For Purpose",linkhref:"#",linkimg:"assets/VFP/VFP.png"},
+    {linkname:"Voice For Purpose",linkhref:"#",linkimg:"assets/home/cardimg/VFP.png"},
 ]
 export const GC:Dept = {
     deptname : "Green Campus",
     team:myteam,
     imglinks:mylinks,
     description:"We plant",
-    img:"assets/VFP/VFP.png"
+    img:"assets/home/cardimg/VFP.png"
 }
