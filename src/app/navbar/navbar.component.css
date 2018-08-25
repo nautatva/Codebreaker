@@ -7,8 +7,8 @@
   margin-right: auto;
   margin-left: auto;
 }
+
 #overlay{
-  
   position: fixed;
   top: 0;
   width: 70%;
@@ -40,13 +40,14 @@ nav .identity p {
   padding-left: 1rem;
   color: #00153a;
 }
-nav .identity img{
+nav .identity {
   padding-top: 0.5rem; 
   justify-content: flex-end;
 }
 .navbar-contents {
   display: flex;
   font-family: sans-serif;
+  margin-bottom: 0;
 }
 .navbar-contents li {
   margin: 0 2rem 0 0;
