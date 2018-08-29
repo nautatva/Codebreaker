@@ -24,7 +24,7 @@
 <ng-template #nodescription>
   <p>No Description Available</p>
 </ng-template>
-<ng-container *ngFor="let dept of mydepts">
+<ng-container *ngFor="let dept of mydepts" id="maincontent">
   <div id={{dept.idname}} class="flex-container">
     <div class="left">
       <div (click)="openWindowCustomClass(content,dept.description,dept.img)" style="cursor: pointer;">
