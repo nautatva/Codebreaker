@@ -27,16 +27,18 @@ export class DepartmentComponent implements OnInit {
 
     // Get the navbar
     var navbar = document.getElementById('navbar');
-
-    // Get the offset position of the navbar
     var sticky = navbar.offsetTop;
 
     // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function myFunction() {
-      if (window.pageYOffset >= sticky) {
+      if (window.pageYOffset == navbar.offsetTop) {
+        document.body.style.marginTop = navbar.scrollHeight + 'px';
+      } else if (window.pageYOffset > sticky) {
         navbar.classList.add('sticky');
       } else {
         navbar.classList.remove('sticky');
+        document.body.style.marginTop = '0px';
+      
       }
     }
   }
@@ -50,5 +52,10 @@ export class DepartmentComponent implements OnInit {
       centered: true,
       size: 'lg'
     });
+  }
+
+  jump() {
+    var myDiv = document.getElementById('GC');
+    myDiv.scrollIntoView();
   }
 }

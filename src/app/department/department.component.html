@@ -1,57 +1,55 @@
 <div id="navbar">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
+  <a (click)="jump()" class="">Green Campus</a>
+  <!-- <a (click)="jump(EO)" class="">Educational Outreach</a> -->
+  <!-- <a href="#contact">Contact</a> -->
 </div>
 
-
-
-<ng-template #content let-c="close" let-d="dismiss">
-    <div class="modal-header">
-        <h4 class="modal-title">Description of Food Item</h4>
-        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
-    <div class="modal-body">
-        <p *ngIf="description; else nodescription">{{description}}</p>
-        <img src="{{image}}" alt="Image not Available" style="width:100% ;height: auto;">
-    </div>
-    <div class="modal-footer">
-        <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
-    </div>
+<ng-template #content let-c="close" let-d="dismiss" data-spy="scroll" data-target="#navbar" data-offset="50">
+  <div class="modal-header">
+    <h4 class="modal-title">Description of Food Item</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p *ngIf="description; else nodescription">{{description}}</p>
+    <img src="{{image}}" alt="Image not Available" style="width:100% ;height: auto;">
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
+  </div>
 </ng-template>
 <ng-template #nodescription>
-    <p>No Description Available</p>
+  <p>No Description Available</p>
 </ng-template>
 <ng-container *ngFor="let dept of mydepts">
-    <div class="flex-container">
-        <div class="left">
-            <div (click)="openWindowCustomClass(content,dept.description,dept.img)" style="cursor: pointer;">
-                <h1>{{dept.deptname}}</h1>
-            </div>
-            <div>
-                <h3>Team Members</h3>
-                <ul>
-                    <li *ngFor="let t of dept.team">{{t.name}}</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="right">
-            <!-- <h3> Important Links </h3> -->
-            <ngb-carousel *ngIf="dept.imglinks">
-                <ng-template ngbSlide *ngFor="let image of dept.imglinks">
-                    <div class="activity" (click)="openWindowCustomClass(content,image.linkdescription,image.linkimg)">
-                        <div class="activityImg">
-                            <img [src]="image.linkimg" [alt]="image.linkname">
-                        </div>
-                        <div class="activityTitle">{{image.linkname}}</div>
-                        <div class="activityContent">{{image.linkdescription}} </div>
-                    </div>
-                    <!-- </a> -->
-                </ng-template>
-            </ngb-carousel>
-        </div>
+  <div id={{dept.idname}} class="flex-container">
+    <div class="left">
+      <div (click)="openWindowCustomClass(content,dept.description,dept.img)" style="cursor: pointer;">
+        <h1>{{dept.deptname}}</h1>
+      </div>
+      <div>
+        <h3>Team Members</h3>
+        <ul>
+          <li *ngFor="let t of dept.team">{{t.name}}</li>
+        </ul>
+      </div>
     </div>
+
+    <div class="right">
+      <!-- <h3> Important Links </h3> -->
+      <ngb-carousel *ngIf="dept.imglinks">
+        <ng-template ngbSlide *ngFor="let image of dept.imglinks">
+          <div class="activity" (click)="openWindowCustomClass(content,image.linkdescription,image.linkimg)">
+            <div class="activityImg">
+              <img [src]="image.linkimg" [alt]="image.linkname">
+            </div>
+            <div class="activityTitle">{{image.linkname}}</div>
+            <div class="activityContent">{{image.linkdescription}} </div>
+          </div>
+          <!-- </a> -->
+        </ng-template>
+      </ngb-carousel>
+    </div>
+  </div>
 </ng-container>

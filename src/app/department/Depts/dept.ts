@@ -15,6 +15,7 @@ export class Team{
 export class Dept{
     deptid?:number;
     deptname:string;
+    idname:string;
     team:Team[];
     imglinks:Imglink[];
     img?:string;
