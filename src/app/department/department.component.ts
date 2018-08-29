@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {depts,Dept } from './Depts/dept';
-import { NgbModal,NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { depts, Dept } from './Depts/dept';
+import { NgbModal, NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-department',
@@ -8,29 +8,47 @@ import { NgbModal,NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./department.component.css']
 })
 export class DepartmentComponent implements OnInit {
-  description:string;
-  image:string;
-  constructor(
-    private modalService:NgbModal,
-    config: NgbCarouselConfig
-  ) { 
+  description: string;
+  image: string;
+  constructor(private modalService: NgbModal, config: NgbCarouselConfig) {
     config.interval = 3000;
     config.wrap = true;
     config.keyboard = true;
     config.pauseOnHover = false;
     config.showNavigationArrows = true;
-    config.showNavigationIndicators= true;
+    config.showNavigationIndicators = true;
   }
 
   ngOnInit() {
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {
+      myFunction();
+    };
+
+    // Get the navbar
+    var navbar = document.getElementById('navbar');
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add('sticky');
+      } else {
+        navbar.classList.remove('sticky');
+      }
+    }
   }
-  mydepts:Dept[] = depts;
+  mydepts: Dept[] = depts;
 
   openWindowCustomClass(content, desc: string, img: string) {
     this.description = desc;
     this.image = img;
-    this.modalService.open(content, { windowClass: 'dark-modal', centered: true, size:'lg' });
+    this.modalService.open(content, {
+      windowClass: 'dark-modal',
+      centered: true,
+      size: 'lg'
+    });
   }
-
-
 }
