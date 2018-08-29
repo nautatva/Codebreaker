@@ -1,14 +1,15 @@
 .flex-container {
   display: flex;
   background-color: #f1f1f1;
+  flex-wrap: wrap;
   border: 2px black;
-  height: 600px;
+  /* height: 600px; */
 }
 .left {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  flex-basis: 0;
+  flex-basis: 320px;
   flex-grow: 1;
   flex-shrink: 0;
   box-shadow: 0px 0px 4px 4px rgb(102, 153, 153);
@@ -27,7 +28,7 @@
   margin: 10px;
   flex-grow: 1;
   flex-shrink: 0;
-  flex-basis: 0;
+  flex-basis: 320px;
   /* border: 1px solid #f1f1f1; */
   box-shadow: 0px 0px 4px 4px rgb(102, 153, 153);
 }
