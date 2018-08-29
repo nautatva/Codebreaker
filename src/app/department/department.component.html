@@ -1,13 +1,14 @@
-<div id="navbar">
+<div id="navbar" data-spy="affix" data-offset-top="1000">
   <!-- implement (click)="jump()" -->
-  <a class="">Green Campus</a>
-  <!-- <a (click)="jump(EO)" class="">Educational Outreach</a> -->
-  <!-- <a href="#contact">Contact</a> -->
+  <a (click)="scrollTo('GC')" class="navhead">Green Campus</a>
+  <a (click)="scrollTo('EO')" class="navhead">Educational Outreach</a>
+  <a (click)="scrollTo('SSD')" class="navhead">Sustainable Social Development</a>
+  <a href="#contact">Contact</a>
 </div>
 
 <ng-template #content let-c="close" let-d="dismiss" data-spy="scroll" data-target="#navbar" data-offset="50">
   <div class="modal-header">
-    <h4 class="modal-title">Description of Food Item</h4>
+    <h4 class="modal-title">Description</h4>
     <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
       <span aria-hidden="true">&times;</span>
     </button>

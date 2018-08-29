@@ -1,5 +1,6 @@
 import {GC} from './GC';
 import {EO} from './EO';
+import {SSD} from './SSD';
 
 export class Imglink{
     linkname:string;
@@ -24,5 +25,6 @@ export class Dept{
 
 export const depts:Dept[] = [
     GC,
-    EO
+    EO,
+    SSD
 ]

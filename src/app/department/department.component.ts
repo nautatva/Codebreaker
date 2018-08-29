@@ -42,7 +42,18 @@ export class DepartmentComponent implements OnInit {
       }
     }
   }
+  //ScrollSpy
+  currentSection = 'section1';
 
+  onSectionChange(sectionId: string) {
+    this.currentSection = sectionId;
+  }
+
+  scrollTo(section) {
+    document.querySelector('#' + section)
+    .scrollIntoView();
+  }
+  //Departments
   mydepts: Dept[] = depts;
 
   openWindowCustomClass(content, desc: string, img: string) {

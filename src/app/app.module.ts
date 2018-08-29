@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ScrollSpyDirective } from './department/scroll-spy.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     DepartmentComponent,
     NavbarComponent,
     HomeComponent,
-    GalleryComponent
+    GalleryComponent,
+    ScrollSpyDirective
   ],
   imports: [
     BrowserModule,
