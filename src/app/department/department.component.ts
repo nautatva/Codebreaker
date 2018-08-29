@@ -33,15 +33,16 @@ export class DepartmentComponent implements OnInit {
     function myFunction() {
       if (window.pageYOffset == navbar.offsetTop) {
         document.body.style.marginTop = navbar.scrollHeight + 'px';
+        navbar.classList.add('sticky');
       } else if (window.pageYOffset > sticky) {
         navbar.classList.add('sticky');
       } else {
         navbar.classList.remove('sticky');
         document.body.style.marginTop = '0px';
-      
       }
     }
   }
+
   mydepts: Dept[] = depts;
 
   openWindowCustomClass(content, desc: string, img: string) {
@@ -52,10 +53,5 @@ export class DepartmentComponent implements OnInit {
       centered: true,
       size: 'lg'
     });
-  }
-
-  jump() {
-    var myDiv = document.getElementById('GC');
-    myDiv.scrollIntoView();
   }
 }
