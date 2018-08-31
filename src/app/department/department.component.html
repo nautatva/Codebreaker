@@ -27,13 +27,18 @@
 <ng-container *ngFor="let dept of mydepts" id="maincontent">
   <div id={{dept.idname}} class="flex-container">
     <div class="left">
-      <div (click)="openWindowCustomClass(content,dept.description,dept.img)" style="cursor: pointer;">
+      <div (click)="openWindowCustomClass(content,dept.description,dept.img)" class="dept">
         <h1>{{dept.deptname}}</h1>
+        <p>need to get user focus for click</p>
       </div>
-      <div>
-        <h3>Team Members</h3>
+      <div class="team">
+        <h3>Department Heads</h3>
         <ul>
-          <li *ngFor="let t of dept.team">{{t.name}}</li>
+          <li *ngFor="let head of dept.team">{{head.name}}</li>
+        </ul>
+        <h3>Activity Associates</h3>
+        <ul>
+          <li *ngFor="let aa of dept.team">{{aa.name}}</li>
         </ul>
       </div>
     </div>
@@ -42,12 +47,12 @@
       <!-- <h3> Important Links </h3> -->
       <ngb-carousel *ngIf="dept.imglinks">
         <ng-template ngbSlide *ngFor="let image of dept.imglinks">
-          <div class="activity" (click)="openWindowCustomClass(content,image.linkdescription,image.linkimg)">
+          <div class="activity" (click)="openWindowCustomClass(content,image.eventDescription,image.eventImg)">
             <div class="activityImg">
-              <img [src]="image.linkimg" [alt]="image.linkname">
+              <img [src]="image.eventImg" [alt]="image.eventName">
             </div>
-            <div class="activityTitle">{{image.linkname}}</div>
-            <div class="activityContent">{{image.linkdescription}} </div>
+            <div class="activityTitle">{{image.eventName}}</div>
+            <div class="activityContent">{{image.eventDescription}} </div>
           </div>
           <!-- </a> -->
         </ng-template>

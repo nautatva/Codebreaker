@@ -35,6 +35,7 @@ export class DepartmentComponent implements OnInit {
         document.body.style.marginTop = navbar.scrollHeight + 'px';
         navbar.classList.add('sticky');
       } else if (window.pageYOffset > sticky) {
+        document.body.style.marginTop = navbar.scrollHeight + 'px';
         navbar.classList.add('sticky');
       } else {
         navbar.classList.remove('sticky');
@@ -50,8 +51,7 @@ export class DepartmentComponent implements OnInit {
   }
 
   scrollTo(section) {
-    document.querySelector('#' + section)
-    .scrollIntoView();
+    document.querySelector('#' + section).scrollIntoView();
   }
   //Departments
   mydepts: Dept[] = depts;
