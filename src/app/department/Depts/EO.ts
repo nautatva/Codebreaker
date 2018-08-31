@@ -1,10 +1,10 @@
-import { Dept, Team, Imglink } from './dept';
+import { Dept, Team, Event } from './dept';
 const departmentName: string = 'Educational Outreach';
 const departmentDescription: string = 'We teach -- description here';
 const mainImage: string = 'assets/home/cardimg/VFP.png';
 const head: Team[] = [{ name: 'Aditya Saurabh' }, { name: 'Yash Kadam' }];
 const myteam: Team[] = [{ name: 'Name goes here' }, { name: '2nd name' }];
-const mylinks: Imglink[] = [
+const events: Event[] = [
   {
     eventName: 'Ganesh Idol',
     eventImg: 'assets/ganeshaidol.jpg'
@@ -28,7 +28,7 @@ export const EO: Dept = {
   deptname: departmentName,
   heads: head,
   team: myteam,
-  imglinks: mylinks,
+  Events: events,
   description: departmentDescription,
   img: mainImage
 };

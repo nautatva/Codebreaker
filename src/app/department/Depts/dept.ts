@@ -2,7 +2,7 @@ import { GC } from './GC';
 import { EO } from './EO';
 import { SSD } from './SSD';
 
-export class Imglink {
+export class Event {
   eventName: string;
   // linkhref:string;
   eventImg?: string;
@@ -11,7 +11,6 @@ export class Imglink {
 export class Team {
   name: string;
   mobile?: number;
-  details?: string;
 }
 export class Dept {
   deptid?: number;
@@ -19,7 +18,7 @@ export class Dept {
   idname: string;
   heads: Team[];
   team: Team[];
-  imglinks: Imglink[];
+  Events: Event[];
   img?: string;
   description: string;
 }

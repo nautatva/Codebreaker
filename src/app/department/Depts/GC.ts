@@ -1,10 +1,10 @@
-import { Dept, Team, Imglink } from './dept';
+import { Dept, Team, Event } from './dept';
 const departmentName: string = 'Green Campus';
 const departmentDescription: string = 'We plant -- description here';
 const mainImage: string = 'assets/home/cardimg/biomapping.jpg';
 const head: Team[] = [{ name: 'Hiranyabagh Nirale' }, { name: 'Tanay Wagh' }];
 const myteam: Team[] = [{ name: 'Name goes here' }, { name: '2nd name' }];
-const mylinks: Imglink[] = [
+const events: Event[] = [
   {
     eventName: 'Ganesh Idol',
     eventImg: 'assets/ganeshaidol.jpg'
@@ -28,7 +28,7 @@ export const GC: Dept = {
   deptname: departmentName,
   heads: head,
   team: myteam,
-  imglinks: mylinks,
+  Events: events,
   description: departmentDescription,
   img: mainImage
 };

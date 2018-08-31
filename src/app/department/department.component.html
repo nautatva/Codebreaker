@@ -45,8 +45,8 @@
 
     <div class="right">
       <!-- <h3> Important Links </h3> -->
-      <ngb-carousel *ngIf="dept.imglinks">
-        <ng-template ngbSlide *ngFor="let image of dept.imglinks">
+      <ngb-carousel *ngIf="dept.Events">
+        <ng-template ngbSlide *ngFor="let image of dept.Events">
           <div class="activity" (click)="openWindowCustomClass(content,image.eventDescription,image.eventImg)">
             <div class="activityImg">
               <img [src]="image.eventImg" [alt]="image.eventName">
