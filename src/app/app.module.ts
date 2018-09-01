@@ -10,6 +10,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { ScrollSpyDirective } from './department/scroll-spy.directive';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { TeamComponent } from './team/team.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { environment } from '../environments/environment';
     NavbarComponent,
     HomeComponent,
     GalleryComponent,
-    ScrollSpyDirective
+    ScrollSpyDirective,
+    TeamComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
