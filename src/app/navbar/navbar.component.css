@@ -50,6 +50,7 @@ nav .identity {
   display: flex;
   font-family: sans-serif;
   margin-bottom: 0;
+  z-index: 18;
 }
 .navbar-contents li {
   margin: 0 2rem 0 0;
@@ -113,6 +114,7 @@ nav .identity {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 18;
   }
 }
 
@@ -127,7 +129,6 @@ nav .identity {
   background: white;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
   height: 100%;
-  z-index: 17;
 }
 
 .m-nav {
