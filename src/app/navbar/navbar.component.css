@@ -112,7 +112,9 @@ nav .identity {
 
 #overlay {
   position: fixed;
-  top: 0;
+  top: 4.5rem;  
+  /*  */
+  /*  */
   /* right: 0; */
   width: 70%;
   color: black;
