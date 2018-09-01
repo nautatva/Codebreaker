@@ -1,0 +1,107 @@
+{
+  "configVersion": 1,
+  "index": "/Codebreaker/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/Codebreaker/index.html",
+        "/Codebreaker/main.481d7fb13f25b94e3c87.js",
+        "/Codebreaker/polyfills.7a0e6866a34e280f48e7.js",
+        "/Codebreaker/runtime.a66f828dca56eeb90e02.js",
+        "/Codebreaker/scripts.056e7333a49ddac971c1.js",
+        "/Codebreaker/styles.49569835073aa09d96fc.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/Codebreaker/assets/food_wastage.JPG",
+        "/Codebreaker/assets/gallery/plant.jpg",
+        "/Codebreaker/assets/ganeshaidol.jpg",
+        "/Codebreaker/assets/home/button.png",
+        "/Codebreaker/assets/home/cardimg/GC_Col.JPG",
+        "/Codebreaker/assets/home/cardimg/GC_trans.jpg",
+        "/Codebreaker/assets/home/cardimg/VFP.png",
+        "/Codebreaker/assets/home/cardimg/biodivmapping.jpg",
+        "/Codebreaker/assets/home/cardimg/cashless.gif",
+        "/Codebreaker/assets/home/cardimg/colldrive.gif",
+        "/Codebreaker/assets/home/cardimg/ecoganesha.jpg",
+        "/Codebreaker/assets/home/cardimg/visitvastsalya.png",
+        "/Codebreaker/assets/home/pattern.svg",
+        "/Codebreaker/assets/home/typo-alpha.png",
+        "/Codebreaker/assets/home/typo.png",
+        "/Codebreaker/assets/icons/icon-128x128.png",
+        "/Codebreaker/assets/icons/icon-144x144.png",
+        "/Codebreaker/assets/icons/icon-152x152.png",
+        "/Codebreaker/assets/icons/icon-192x192.png",
+        "/Codebreaker/assets/icons/icon-384x384.png",
+        "/Codebreaker/assets/icons/icon-512x512.png",
+        "/Codebreaker/assets/icons/icon-72x72.png",
+        "/Codebreaker/assets/icons/icon-96x96.png",
+        "/Codebreaker/assets/logo128.png",
+        "/Codebreaker/assets/verdade.jpg",
+        "/Codebreaker/assets/woodimage.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/Codebreaker/assets/food_wastage.JPG": "998fc4d71035db378bb1e93a217269f923e13cbd",
+    "/Codebreaker/assets/gallery/plant.jpg": "8bf159ca0e6fc8b86656721f7280539763d7b81f",
+    "/Codebreaker/assets/ganeshaidol.jpg": "0dc034b87027a0fe12e93298bc6abb26f8afb7bd",
+    "/Codebreaker/assets/home/button.png": "bda0601ec4c57194b14e19a81eba768bccbfa099",
+    "/Codebreaker/assets/home/cardimg/GC_Col.JPG": "0abbd75a1bbd2c2934b285f341c05b21ea713363",
+    "/Codebreaker/assets/home/cardimg/GC_trans.jpg": "abda0aeb0cef853778c7f0a88299bda6e9bb01c8",
+    "/Codebreaker/assets/home/cardimg/VFP.png": "f5c3581e8a2200c68703af222f3abd1768d652a9",
+    "/Codebreaker/assets/home/cardimg/biodivmapping.jpg": "d79dca14f8ca05be94c495dd511dac28a96ed2b5",
+    "/Codebreaker/assets/home/cardimg/cashless.gif": "9d08da42aa5bb610674f72d8d1c8b0b931608d7f",
+    "/Codebreaker/assets/home/cardimg/colldrive.gif": "6af76331f9e69d0a66bd815f7dc7acc7034f12c7",
+    "/Codebreaker/assets/home/cardimg/ecoganesha.jpg": "8b163533221a12776b645209d18e6de1c8970758",
+    "/Codebreaker/assets/home/cardimg/visitvastsalya.png": "445a0a12e40dd3f52c22fef41bde1c8856258ec5",
+    "/Codebreaker/assets/home/pattern.svg": "3fd8a7c55f822591b86efb5eb548d99c36610808",
+    "/Codebreaker/assets/home/typo-alpha.png": "dac6779ec503f7ba880d607b739db8e0462b7502",
+    "/Codebreaker/assets/home/typo.png": "3712eff0f7ccb27a9a5365cbaff62b5567e1c583",
+    "/Codebreaker/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/Codebreaker/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/Codebreaker/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/Codebreaker/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/Codebreaker/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/Codebreaker/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/Codebreaker/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/Codebreaker/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/Codebreaker/assets/logo128.png": "f1d64a10148001b7e1792d93164d1bef55b04b8b",
+    "/Codebreaker/assets/verdade.jpg": "4d683a63573d084d6136cd932ddd482dc8acab6f",
+    "/Codebreaker/assets/woodimage.jpg": "bd30370421c2d2e6fed2fc7b8586c3da6217626d",
+    "/Codebreaker/index.html": "9d3e8c3b2ef4242e89f56c15e95ed4b58e0cccd0",
+    "/Codebreaker/main.481d7fb13f25b94e3c87.js": "b7f6a6cc3d044b3ee72d6dc3f4360c46535e88f9",
+    "/Codebreaker/polyfills.7a0e6866a34e280f48e7.js": "9f0b8341c0a0caec1581da2f255eb5dbb8e12303",
+    "/Codebreaker/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "/Codebreaker/scripts.056e7333a49ddac971c1.js": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "/Codebreaker/styles.49569835073aa09d96fc.css": "87a8497d9b7c78bc0060b5b4b199ce24e9f0ef87"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
