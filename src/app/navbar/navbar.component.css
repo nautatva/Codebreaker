@@ -108,11 +108,19 @@ nav .identity {
   .active {
     display: inline-block;
   }
+  .nav-container{
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
 }
 
 #overlay {
   position: fixed;
-  top: 4.5rem;
+  top: 4.5rem;  
+  /*  */
+  /*  */
   /* right: 0; */
   width: 100%;
   color: black;
