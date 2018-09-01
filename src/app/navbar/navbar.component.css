@@ -1,6 +1,11 @@
-.nav-container{
+.nav-container {
   margin-top: 0;
 }
+
+.space {
+  padding: 10% auto;
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -8,6 +13,10 @@
   margin-left: auto;
 }
 
+#myNav {
+  margin: 10px auto;
+  margin-top: 5px;
+}
 nav {
   overflow: hidden;
   display: flex;
@@ -21,7 +30,7 @@ nav .navbar-right {
   align-items: center;
   justify-content: center;
 }
-nav #hamburger{
+nav #hamburger {
   display: none;
 }
 nav .identity {
@@ -29,12 +38,12 @@ nav .identity {
   align-items: center;
 }
 nav .identity p {
-  padding-top: 0.5rem;
+  /* padding-top: 0.5rem; */
   padding-left: 1rem;
   color: #00153a;
 }
 nav .identity {
-  padding-top: 0.5rem; 
+  /* padding-top: 0.5rem;  */
   justify-content: flex-end;
 }
 .navbar-contents {
@@ -76,33 +85,32 @@ nav .identity {
   }
 }
 
-@media (max-width:630px){
-  nav{
+@media (max-width: 630px) {
+  nav {
     flex-direction: column;
   }
-  nav ul{
+  nav ul {
     display: none;
   }
-  nav li{
+  nav li {
     text-align: center;
     width: 100%;
   }
-  nav #hamburger{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  nav #hamburger {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
-  .shortView{
+  .shortView {
     display: flex;
     justify-content: space-between;
   }
-  .active{
+  .active {
     display: inline-block;
   }
 }
 
-
-#overlay{
+#overlay {
   position: fixed;
   top: 0;
   /* right: 0; */
@@ -114,12 +122,12 @@ nav .identity {
   z-index: 17;
 }
 
-.m-nav{
+.m-nav {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-.m-nav li{
+.m-nav li {
   list-style: none;
 }

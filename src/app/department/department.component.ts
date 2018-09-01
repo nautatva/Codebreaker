@@ -37,7 +37,8 @@ export class DepartmentComponent implements OnInit {
       } else if (window.pageYOffset > sticky) {
         document.body.style.marginTop = navbar.scrollHeight + 'px';
         navbar.classList.add('sticky');
-      } else {
+      }
+      if (window.pageYOffset < sticky) {
         navbar.classList.remove('sticky');
         document.body.style.marginTop = '0px';
       }
