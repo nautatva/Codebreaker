@@ -6,11 +6,21 @@
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="assets/logo128.png">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <link rel="icon" type="image/x-icon" href="logo128.png">
+  <meta name="theme-color" content="#317EFB"/>
+  <!-- <script>
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker
+               .register('sw')
+               .then(function() { console.log("Service Worker Registered"); });
+    }
+    </script> -->
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.js"></script> -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1976d2">
 </head>
 <body>
   <app-root></app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
 </body>
 </html>
