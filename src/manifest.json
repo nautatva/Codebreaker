@@ -3,13 +3,33 @@
   "short_name": "NSS, IITB",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
-  "display": "browser",
-  "scope": "/",
-  "start_url": "/",
+  "display": "minimal-ui",
+  "scope": "/Codebreaker",
+  "start_url": "/Codebreaker",
   "icons": [
     {
       "src": "assets/logo128.png",
       "sizes": "97x97",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/logo192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/logo512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/logo1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/NSS.png",
+      "sizes": "3200x3200",
       "type": "image/png"
     }
   ]
