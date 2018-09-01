@@ -1,0 +1,51 @@
+.row{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    border: 1px solid black;
+    background: #392613;
+    color: white;
+}
+.rowOne{
+    text-align: center;
+}
+.rowTwo{
+    text-align: center;
+}
+.rowThree{
+    text-align: center;
+}
+.rowFourth{
+    border: 0.7px solid white;
+    text-align: center;
+}
+ul>li>a{
+    text-decoration: none;
+    color: #fff;
+    padding-right: 1rem;
+}
+ul>li>a:hover{
+    color: yellow;
+    text-decoration-line: underline;
+}
+.linkCardOne{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex: none;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.linkCardTwo{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex: none;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+@media (max-width:720px){
+    .row{
+        flex-wrap: wrap;
+    }
+}
