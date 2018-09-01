@@ -2,7 +2,7 @@
 #navbar {
   overflow: hidden;
   background-color: #333;
-  z-index: 1;
+  z-index: 16;
 }
 
 /* Navbar links */
@@ -19,7 +19,7 @@
 .maincontent {
   padding: 16px;
 }
-.navhead{
+.navhead {
   cursor: pointer;
 }
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -33,8 +33,6 @@
 .sticky + .maincontent {
   padding-top: 1060px;
 }
-
-
 
 .flex-container {
   display: flex;
@@ -52,13 +50,25 @@
   flex-shrink: 0;
   box-shadow: 0px 0px 4px 4px rgb(102, 153, 153);
 }
-.left > div {
+/* .left > div {
   background-color: rgb(144, 211, 238);
   margin: 10px;
-  color: red;
-  /* flex-grow: 2; */
-  /* width: 100%; */
-  height: 50%;
+  color: red; */
+/* flex-grow: 2; */
+/* width: 100%; */
+/* height: 50%; */
+/* } */
+.dept {
+  /* flex-grow: 1; */
+  flex-shrink: 0;
+  /* flex-basis: 0; */
+  cursor: pointer; 
+}
+
+.team {
+  flex-grow: 6;
+  flex-shrink: 0;
+
 }
 .right {
   background-color: orange;
@@ -77,7 +87,7 @@
 } */
 
 /* Carousel */
-.activity{
+.activity {
   flex-direction: column;
   min-width: 300px;
   /* margin: 1rem 1rem 0 1rem; */
@@ -85,28 +95,28 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
-.activity :hover{
+.activity :hover {
   box-shadow: none;
 }
-.activityImg>img{
+.activityImg > img {
   margin-left: 2%;
   margin-right: 2%;
   margin-top: 4%;
   width: 96%;
   height: 22rem;
 }
-.activityTitle{
+.activityTitle {
   text-align: center;
   font-size: 2.5rem;
   margin-left: 2%;
   margin-right: 2%;
   /* border: 2px solid white; */
-  background-color: rgba(20, 21, 129, 0.438) ;
+  background-color: rgba(20, 21, 129, 0.438);
   color: #fff;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding: 0.3rem;
 }
-.activityContent{
+.activityContent {
   font-size: 1.2rem;
   text-align: center;
   margin-left: 2%;
@@ -131,7 +141,8 @@ button {
   border: none;
   padding: 5px 10px;
   border-radius: 4px;
-  cursor: pointer; cursor: hand;
+  cursor: pointer;
+  cursor: hand;
 }
 
 button:hover {
