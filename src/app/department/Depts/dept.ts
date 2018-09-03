@@ -1,30 +1,26 @@
-import {GC} from './GC';
-import {EO} from './EO';
-import {SSD} from './SSD';
+import { GC } from './GC';
+import { EO } from './EO';
+import { SSD } from './SSD';
 
-export class Imglink{
-    linkname:string;
-    linkhref:string;
-    linkimg?:string;
-    linkdescription?:string;
+export class Event {
+  eventName: string;
+  // linkhref:string;
+  eventImg?: string;
+  eventDescription?: string;
 }
-export class Team{
-    name:string;
-    mobile?:number;
-    details?:string;
+export class Team {
+  name: string;
+  mobile?: number;
 }
-export class Dept{
-    deptid?:number;
-    deptname:string;
-    idname:string;
-    team:Team[];
-    imglinks:Imglink[];
-    img?:string;
-    description;
+export class Dept {
+  deptid?: number;
+  deptname: string;
+  idname: string;
+  heads: Team[];
+  team: Team[];
+  Events: Event[];
+  img?: string;
+  description: string;
 }
 
-export const depts:Dept[] = [
-    GC,
-    EO,
-    SSD
-]
+export const depts: Dept[] = [GC, EO, SSD];
