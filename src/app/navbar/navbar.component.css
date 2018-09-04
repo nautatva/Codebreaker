@@ -3,7 +3,7 @@
 }
 
 .space {
-  padding: 1vw 5vw;
+  padding: 0 5vw;
 }
 
 .container {
@@ -14,7 +14,7 @@
 }
 
 #myNav {
-  margin: 10px auto;
+  margin: 4px auto;
   margin-top: 5px;
 }
 nav {
@@ -129,6 +129,7 @@ nav .identity {
   background: white;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
   height: 100%;
+  z-index: 18;
 }
 
 .m-nav {

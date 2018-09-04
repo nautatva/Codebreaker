@@ -3,7 +3,7 @@
   "short_name": "NSS, IITB",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
-  "display": "minimal-ui",
+  "display": "standalone",
   "scope": "/Codebreaker",
   "start_url": "/Codebreaker/",
   "icons": [
