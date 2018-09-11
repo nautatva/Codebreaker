@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { depts, Dept } from './Depts/dept';
+import { depts, Dept } from '../../shared/utils/dept';
 import { NgbModal, NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({

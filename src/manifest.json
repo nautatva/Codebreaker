@@ -8,27 +8,27 @@
   "start_url": "/Codebreaker/",
   "icons": [
     {
-      "src": "assets/logo128.png",
+      "src": "assets/NSS/logo128.png",
       "sizes": "97x97",
       "type": "image/png"
     },
     {
-      "src": "assets/logo192.png",
+      "src": "assets/NSS/logo192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "assets/logo512.png",
+      "src": "assets/NSS/logo512.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "assets/logo1024.png",
+      "src": "assets/NSS/logo1024.png",
       "sizes": "1024x1024",
       "type": "image/png"
     },
     {
-      "src": "assets/NSS.png",
+      "src": "assets/NSS/NSS.png",
       "sizes": "3200x3200",
       "type": "image/png"
     }

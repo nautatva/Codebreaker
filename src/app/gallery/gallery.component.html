@@ -2,16 +2,16 @@
   <div class="modal-body">
     <ngb-carousel *ngIf="images">
       <ng-template ngbSlide *ngFor="let image of images">
-        <img id="carousel" [src]="image" alt="There was a image here">
+        <img id="carousel" [src]="image.location" alt="image.description">
       </ng-template>
     </ngb-carousel>
   </div>
 </ng-template>
 <div class="cards">
   <div class="card" *ngFor="let image of images" (click)="openWindowCustomClass(content)">
-    <img class=cardImg [src]="image">
+    <img class=cardImg [src]="image.location">
     <div class="text">
-      <div class="cardTitle">Eco Ganesha Workshop</div>
+      <div class="cardTitle">{{image.description}}</div>
     </div>
   </div>
 </div>

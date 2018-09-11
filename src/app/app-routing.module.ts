@@ -9,13 +9,12 @@ const routes: Routes = [
   { path: 'departments', component: DepartmentComponent },
   { path: '', component: HomeComponent },
   { path: 'gallery', component: GalleryComponent },
-
   { path: 'team', component: TeamComponent },
   { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes), ],
   declarations: [],
   exports: [RouterModule]
 })

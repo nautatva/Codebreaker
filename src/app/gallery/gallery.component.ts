@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal,NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { images, Image } from "../../shared/utils/image";
 
 @Component({
   selector: 'app-gallery',
@@ -7,12 +8,7 @@ import { NgbModal,NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent implements OnInit {
-  images:string[] = [
-    "assets/ganeshaidol.jpg",
-    "assets/food_wastage.JPG",
-    "assets/gallery/plant.jpg",
-    "assets/verdade.jpg",    
-  ]
+  images:Image[] = images;
   constructor(
     private modalService:NgbModal,
     config: NgbCarouselConfig
