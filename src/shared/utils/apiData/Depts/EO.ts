@@ -4,19 +4,19 @@ const departmentDescription: string =
   "Education is our birthright, but not all have the privilege. We teach the underprivileged and also let them inculcate cultural skills and sound morals. You get to interact with children and relive your childhood. You leave a positive impact on someone's life and be their role model";
 const mainImage: string = 'assets/home/cardimg/VFP.png';
 const head: Team[] = [
-  { name: 'Aditya Saurabh', mobile: '9987097028' },
-  { name: 'Yash Kadam', mobile: '8976136868' }
+  { name: 'Aditya Saurabh', mobile: 9987097028 },
+  { name: 'Yash Kadam', mobile: 8976136868 }
 ];
 const myteam: Team[] = [
-  { name: 'Aniket Kale', mobile: '9881032043' },
-  { name: 'Denil Mehta', mobile: '9586801119' },
-  { name: 'Nihal Ratan', mobile: '8279450546' },
-  { name: 'Niket Parikh', mobile: '9182980055' },
-  { name: 'Nilaja Nitin Bende', mobile: '8530035436' },
-  { name: 'Rachana Meena', mobile: '7400400987' },
-  { name: 'Ritesh Chandramani', mobile: '8169609631' },
-  { name: 'Saptarshi Ratna', mobile: '9975196749' },
-  { name: 'Vaibhav Chandan', mobile: '9518971041' }
+  { name: 'Aniket Kale', mobile: 9881032043 },
+  { name: 'Denil Mehta', mobile: 9586801119 },
+  { name: 'Nihal Ratan', mobile: 8279450546 },
+  { name: 'Niket Parikh', mobile: 9182980055 },
+  { name: 'Nilaja Nitin Bende', mobile: 8530035436 },
+  { name: 'Rachana Meena', mobile: 7400400987 },
+  { name: 'Ritesh Chandramani', mobile: 8169609631 },
+  { name: 'Saptarshi Ratna', mobile: 9975196749 },
+  { name: 'Vaibhav Chandan', mobile: 9518971041 }
 ];
 const events: Event[] = [
   {
