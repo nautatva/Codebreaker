@@ -1,10 +1,22 @@
 .center {
   display: flex;
   justify-content: center;
+
+  /* width: 100vh;
+  height: 38vh; */
+  /* background-image: url('/assets/NSS/typo.png'); */
+  /* Create the parallax scrolling effect */
+  /* background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 55% 30%; */
 }
 .intro {
-  height: 88vh;
+  height: 100vh;
   /* height: 660px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .intro .dotted-background {
   background-image: url('/assets/home/pattern.svg');
@@ -15,6 +27,12 @@
   left: 0px;
   z-index: -20;
   background-size: 2%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
 }
 
 .intro .overlay-background {
@@ -41,7 +59,8 @@
   z-index: -12;
 }
 .intro #introImg {
-  padding-top: 30vh;
+  /* padding-top: 30vh; */
+  margin-bottom: 16vh;
   width: 40%;
   height: 40%;
 }
@@ -85,7 +104,7 @@
   /* height: 275px; */
 }
 
-.partners{
+.partners {
   margin: 4rem 0;
   background: #f1f1f1;
   height: 100px;
