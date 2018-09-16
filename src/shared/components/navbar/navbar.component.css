@@ -108,6 +108,7 @@ nav .identity {
   }
   .active {
     display: inline-block;
+    height: 300px;
   }
   .nav-container{
     background: white;

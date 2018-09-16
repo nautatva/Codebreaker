@@ -21,7 +21,7 @@ const myteam: Team[] = [
 const events: Event[] = [
   {
     eventName: 'NGO Volunteering',
-    // eventImg: 'assets/gallery/verdade.jpg',
+    eventImg: 'assets/EO/NGO.jpeg',
     eventDescription:
       'Volunteers teach a class of students at an NGO centre located near the campus'
   },
@@ -33,31 +33,31 @@ const events: Event[] = [
   },
   {
     eventName: 'Open Learning Initiative (OLI)',
-    eventImg: '',
+    eventImg: 'assets/EO/OLI.png',
     eventDescription:
       'Educational videos are recorded in regional languages (because language should not be a barrier) and are available online to reach out to remote areas'
   },
   {
-    eventName: 'Voice For Purpose',
-    eventImg: '',
+    eventName: 'Voice For Purpose (VFP)',
+    eventImg: 'assets/EO/VFP.png',
     eventDescription:
       'Audio Books of famous literature and travelogues of different cities in India are recorded and are available online to share the gift of Vision with those who are not so fortunate'
   },
   {
     eventName: 'Neem School',
-    eventImg: '',
+    eventImg: 'assets/EO/neem_school.jpg',
     eventDescription:
       'Education is not limited to books. As a man is known for his morals, (optional:- in association with Black Swan Consulting Group’s Neem School programme,) we volunteer to inculcate moral values in the kids (optional:- living in the slum near the campus)'
   },
   {
     eventName: 'Muskaan',
-    eventImg: '',
+    eventImg: 'assets/EO/muskaan.jpg',
     eventDescription:
       'Since classroom education is not enough, students are involved in extracurricular activities, for their all-round development'
   },
   {
     eventName: 'Prayog',
-    eventImg: '',
+    eventImg: 'assets/EO/prayog.jpg',
     eventDescription:
       'Experiences teach us a lot, so science experiments are performed by the students to help them develop a scientific temperament and provide hands-on experience'
   }

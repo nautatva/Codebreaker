@@ -46,7 +46,7 @@
   padding-top: 1060px;
 }
 
-.flex-container{
+.flex-container {
   display: flex;
 }
 .inner-flex {
@@ -56,12 +56,16 @@
   /* border: 2px black; */
   /* border: 4px #292b2c solid; */
   margin: 4rem;
+  margin-bottom: 0;
   transition: 0.25s;
   width: 100%;
+  /* EO #f8ea47 */
+  background-color: #f8ea47;
+  box-shadow: 0.25px 0.25px 0.25px 0.25px rgba(0, 0, 0, 0.2);
   /* height: 600px; */
 }
 .inner-flex:hover {
-  box-shadow: 16px 8px 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 .left {
   display: flex;
@@ -70,6 +74,7 @@
   flex-basis: 320px;
   flex-grow: 1;
   flex-shrink: 0;
+
   /* box-shadow: 0px 0px 4px 4px rgb(102, 153, 153); */
 }
 /* .left > div {
@@ -92,12 +97,13 @@
   flex-shrink: 0;
 }
 .right {
-  background-color: orange;
+  /* background-color: orange; */
   color: brown;
-  margin: 10px;
-  flex-grow: 1;
+  /* margin: 10px; */
+  flex-grow: 2;
   flex-shrink: 0;
   flex-basis: 320px;
+  /* height: 480px; */
   /* border: 1px solid #f1f1f1; */
   /* box-shadow: 0px 0px 4px 4px rgb(102, 153, 153); */
 }
@@ -119,14 +125,31 @@
 .activity :hover {
   box-shadow: none;
 }
-.activityImg > img {
-  margin-left: 2%;
+.activity > img {
+  /* margin-left: 2%;
   margin-right: 2%;
-  margin-top: 4%;
-  width: 96%;
-  height: 22rem;
+  margin-top: 4%; */
+  width: 100%;
+  height: 500px;
+}
+.activityImg h1 {
+  position: absolute;
+  background-color: #fff;
+  overflow: hidden;
+  display: inline-block;
+  /* padding: 10px; */
+  font-weight: bold;
+  font-family: arial;
+  color: transparent;
+  font-size: 200px;
+}
+.activityImg h1 span {
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  display: block;
 }
 .activityTitle {
+  position: relative;
   text-align: center;
   font-size: 2.5rem;
   margin-left: 2%;
@@ -135,7 +158,13 @@
   /* background-color: rgba(20, 21, 129, 0.438); */
   color: #fff;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  padding: 0.3rem;
+  /* padding: 0.3rem; */
+}
+.activityTitle span{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 .activityContent {
   font-size: 1.2rem;

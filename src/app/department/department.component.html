@@ -45,16 +45,33 @@
         </div>
       </div>
 
+      <!-- h1 { 
+    background-color:#fff;
+    overflow:hidden;
+    display:inline-block; 
+    padding:10px; 
+    font-weight:bold;
+    font-family:arial;
+    color:transparent;
+    font-size:200px;
+}span { 
+    background: url(http://www.color-hex.com/palettes/26323.png) -20px -20px repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display:block;
+} -->
       <div class="right">
         <!-- <h3> Important Links </h3> -->
         <ngb-carousel *ngIf="dept.Events">
           <ng-template ngbSlide *ngFor="let image of dept.Events">
             <div class="activity" (click)="openWindowCustomClass(content,image.eventDescription,image.eventImg, image.eventName)">
-              <div class="activityImg">
-                <img [src]="image.eventImg" [alt]="image.eventName">
+              <div class="activityTitle">
+                <span>{{image.eventName}}</span>
               </div>
-              <div class="activityTitle">{{image.eventName}}</div>
-              <div class="activityContent">{{image.eventDescription}} </div>
+              <!-- get activity title on image -->
+              <img [src]="image.eventImg" [alt]="image.eventName">
+              <!-- </div> -->
+              <!-- <div class="activityContent">{{image.eventDescription}} </div> -->
             </div>
             <!-- </a> -->
           </ng-template>
