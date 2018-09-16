@@ -53,6 +53,7 @@
   /* border: 2px black; */
   /* border: 4px #292b2c solid; */
   margin: 4rem;
+  transition: 0.25s;
   /* height: 600px; */
 }
 .flex-container:hover {
