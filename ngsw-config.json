@@ -10,12 +10,6 @@
         "/*.css",
         "/*.js"
       ]
-    },
-    "cache": {
-      "optimizeFor": "freshness",
-      "maxAgeMs": 0,
-      "maxEntries": 1,
-      "strategy": "lru"
     }
   }, {
     "name": "assets",
