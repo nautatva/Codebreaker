@@ -10,7 +10,7 @@
 <ng-template #content let-ca="close('a')" let-d="dismiss()" data-spy="scroll" data-target="#navbar" data-offset="50">
   <div class="modal-header">
     <h4 class="modal-title">Description</h4>
-    <button type="button" class="close" aria-label="Close" (click)="ca">
+    <button type="button" class="close" aria-label="Close" (click)="ca" (click)='goback()' >
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
@@ -19,17 +19,14 @@
     <img src="{{image}}" alt={{eventName}} style="width:100% ;height: auto;">
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-light" (click)="ca">Close</button>
+    <button type="button" class="btn btn-light" (click)="ca" (click)='goback()' >Close</button>
   </div>
 </ng-template>
-<!-- <ng-template #nodescription>
-  <p>No Description Available</p>
-</ng-template> -->
 <ng-container *ngFor="let dept of mydepts" id="maincontent">
   <div id={{dept.idname}} class="flex-container">
     <div class="inner-flex">
       <div class="left">
-        <div (click)="openWindowCustomClass(content,dept.description,dept.img)" class="dept">
+        <div routerLink="/departments/modal" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" (click)="openWindowCustomClass(content,dept.description,dept.img)" class="dept">
           <h1>{{dept.deptname}}</h1>
           <p>need to get user focus for click</p>
         </div>

@@ -10,7 +10,8 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'gallery', component: GalleryComponent },
   { path: 'team', component: TeamComponent },
-  { path: '**', redirectTo: '' }
+  { path: 'departments/modal', component: DepartmentComponent},
+  { path: '**', redirectTo: '' }, 
 ];
 
 @NgModule({
