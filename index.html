@@ -8,19 +8,50 @@
   <link rel="icon" type="image/x-icon" href="assets/NSS/logo128.png">
   <meta name="theme-color" content="#317EFB" />
   <link rel="manifest" href="manifest.json">
-  <!-- <script>
-    if('serviceWorker' in navigator) {
-      navigator.serviceWorker
-               .register('sw')
-               .then(function() { console.log("Service Worker Registered"); });
-    }
-    </script> -->
   <!-- <script src="https://code.jquery.com/jquery-3.2.1.js"></script> -->
 <link rel="stylesheet" href="styles.49569835073aa09d96fc.css"></head>
 
 <body>
   <app-root></app-root>
-  <noscript>Please enable JavaScript to continue using this application.</noscript>
-<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.7a0e6866a34e280f48e7.js"></script><script type="text/javascript" src="scripts.056e7333a49ddac971c1.js"></script><script type="text/javascript" src="main.e7664cf531793645f45c.js"></script></body>
+  <div id="notification">A new version of this app is available. Click <a id="reload">here</a> to update.</div>
+
+  <!-- <noscript>Please enable JavaScript to continue using this application.</noscript> -->
+<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.7a0e6866a34e280f48e7.js"></script><script type="text/javascript" src="scripts.056e7333a49ddac971c1.js"></script><script type="text/javascript" src="main.ab5bf7151f8722d830a0.js"></script></body>
+<script>
+  let newWorker;
+
+  // The click event on the notification
+  document.getElementById('reload').addEventListener('click', function () {
+    newWorker.postMessage({ action: 'skipWaiting' });
+  });
+
+  if ('serviceWorker' in navigator) {
+    // Register the service worker
+    navigator.serviceWorker.register('/service-worker.js').then(reg => {
+      reg.addEventListener('updatefound', () => {
+
+        // An updated service worker has appeared in reg.installing!
+        newWorker = reg.installing;
+
+        newWorker.addEventListener('statechange', () => {
+
+          // Has service worker state changed?
+          switch (newWorker.state) {
+            case 'installed':
+
+              // There is a new service worker available, show the notification
+              if (navigator.serviceWorker.controller) {
+                let notification = document.getElementById('notification ');
+                notification.className = 'show';
+              }
+
+              break;
+          }
+        });
+      });
+    });
+
+  }
+</script>
 
 </html>
