@@ -6,77 +6,62 @@
   <a href="#contact">Contact</a>
 </div>
 
+<!-- fix for mobile navbar -->
 <div class="mobile-fix"></div>
+
+<!-- modal created here -->
 <ng-template #content let-ca="close('a')" let-d="dismiss()" data-spy="scroll" data-target="#navbar" data-offset="50">
   <div class="modal-header">
-    <h4 class="modal-title">Description</h4>
+    <h4 class="modal-title">{{eventname}}</h4>
     <button type="button" class="close" aria-label="Close" (click)="ca">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
   <div class="modal-body">
     <p *ngIf="description">{{description}}</p>
-    <img src="{{image}}" alt={{eventName}} style="width:100% ;height: auto;">
+    <img src="{{image}}" alt={{eventname}} style="width:100% ;height: auto;">
   </div>
   <div class="modal-footer">
     <button type="button" class="btn btn-light" (click)="ca">Close</button>
   </div>
 </ng-template>
-<!-- <ng-template #nodescription>
-  <p>No Description Available</p>
-</ng-template> -->
+
 <ng-container *ngFor="let dept of mydepts" id="maincontent">
   <div id={{dept.idname}} class="flex-container">
-    <div class="inner-flex">
-      <div class="left">
-        <div (click)="openWindowCustomClass(content,dept.description,dept.img)" class="dept">
-          <h1>{{dept.deptname}}</h1>
-          <p>need to get user focus for click</p>
-        </div>
-        <div class="team">
-          <h3>Department Heads</h3>
-          <ul>
-            <li *ngFor="let head of dept.heads">{{head.name}}</li>
-          </ul>
-          <h3>Activity Associates</h3>
-          <ul>
-            <li *ngFor="let aa of dept.team">{{aa.name}}</li>
-          </ul>
-        </div>
+    <div class="scroll"></div>
+    <div class="left">
+      <div (click)="openWindowCustomClass(content,dept.description,dept.img,dept.deptname)" class="dept">
+        <h1>{{dept.deptname}}</h1>
+        <p>need to get user focus for click</p>
       </div>
-
-      <!-- h1 { 
-    background-color:#fff;
-    overflow:hidden;
-    display:inline-block; 
-    padding:10px; 
-    font-weight:bold;
-    font-family:arial;
-    color:transparent;
-    font-size:200px;
-}span { 
-    background: url(http://www.color-hex.com/palettes/26323.png) -20px -20px repeat;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    display:block;
-} -->
-      <div class="right">
-        <!-- <h3> Important Links </h3> -->
-        <ngb-carousel *ngIf="dept.Events">
-          <ng-template ngbSlide *ngFor="let image of dept.Events">
-            <div class="activity" (click)="openWindowCustomClass(content,image.eventDescription,image.eventImg, image.eventName)">
-              <div class="activityTitle">
-                <span>{{image.eventName}}</span>
-              </div>
-              <!-- get activity title on image -->
-              <img [src]="image.eventImg" [alt]="image.eventName">
-              <!-- </div> -->
-              <!-- <div class="activityContent">{{image.eventDescription}} </div> -->
-            </div>
-            <!-- </a> -->
-          </ng-template>
-        </ngb-carousel>
+      <div class="team">
+        <h3>Department Heads</h3>
+        <ul>
+          <li *ngFor="let head of dept.heads">{{head.name}}</li>
+        </ul>
+        <h3>Activity Associates</h3>
+        <ul>
+          <li *ngFor="let aa of dept.team">{{aa.name}}</li>
+        </ul>
       </div>
     </div>
+    <div class="right">
+      <!-- <h3> Important Links </h3> -->
+      <ngb-carousel *ngIf="dept.Events">
+        <ng-template ngbSlide *ngFor="let image of dept.Events">
+          <div class="activity" (click)="openWindowCustomClass(content,image.eventDescription,image.eventImg, image.eventName)">
+            <div class="activityTitle">
+              <span>{{image.eventName}}</span>
+            </div>
+            <!-- get activity title on image -->
+            <img [src]="image.eventImg" [alt]="image.eventName">
+            <!-- </div> -->
+            <!-- <div class="activityContent">{{image.eventDescription}} </div> -->
+          </div>
+          <!-- </a> -->
+        </ng-template>
+      </ngb-carousel>
+    </div>
   </div>
+
 </ng-container>

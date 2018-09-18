@@ -23,4 +23,6 @@ export class Dept {
   description: string;
 }
 
-export const depts: Dept[] = [EO, SSD, GC];
+export const depts: Dept[] = [
+  // SSD,
+   EO, GC];

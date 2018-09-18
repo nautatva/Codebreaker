@@ -8,9 +8,9 @@ import { NgbModal, NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./department.component.css']
 })
 export class DepartmentComponent implements OnInit {
+  eventname: string;
   description: string;
   image: string;
-  eventName: String;
   constructor(private modalService: NgbModal, config: NgbCarouselConfig) {
     config.interval = 3000;
     config.wrap = true;
@@ -58,10 +58,10 @@ export class DepartmentComponent implements OnInit {
   //Departments
   mydepts: Dept[] = depts;
 
-  openWindowCustomClass(content, desc: string, img: string, eventName: String) {
+  openWindowCustomClass(content, desc: string, img: string, eventName: string) {
     this.description = desc;
     this.image = img;
-    this.eventName = this.eventName;
+    this.eventname = eventName;
     this.modalService.open(content, {
       windowClass: 'dark-modal',
       centered: true,
