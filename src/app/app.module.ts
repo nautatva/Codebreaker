@@ -8,8 +8,8 @@ import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ScrollSpyDirective } from './department/scroll-spy.directive';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
+// import { ServiceWorkerModule } from '@angular/service-worker';
+// import { environment } from '../environments/environment';
 import { TeamComponent } from './team/team.component';
 import { FooterComponent } from '../shared/components/footer/footer.component';
 
@@ -27,8 +27,8 @@ import { FooterComponent } from '../shared/components/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    NgbModule
+    // ,ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
