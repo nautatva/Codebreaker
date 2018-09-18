@@ -1,0 +1,109 @@
+{
+  "configVersion": 1,
+  "index": "/Codebreaker/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/Codebreaker/index.html",
+        "/Codebreaker/main.e7664cf531793645f45c.js",
+        "/Codebreaker/polyfills.7a0e6866a34e280f48e7.js",
+        "/Codebreaker/runtime.a66f828dca56eeb90e02.js",
+        "/Codebreaker/scripts.056e7333a49ddac971c1.js",
+        "/Codebreaker/styles.49569835073aa09d96fc.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/Codebreaker/assets/EO/ALP.jpg",
+        "/Codebreaker/assets/EO/NGO.jpeg",
+        "/Codebreaker/assets/EO/OLI.png",
+        "/Codebreaker/assets/EO/VFP.png",
+        "/Codebreaker/assets/EO/muskaan.jpg",
+        "/Codebreaker/assets/EO/neem_school.jpg",
+        "/Codebreaker/assets/EO/prayog.jpg",
+        "/Codebreaker/assets/NSS/NSS-logo_big.png",
+        "/Codebreaker/assets/NSS/logo1024.png",
+        "/Codebreaker/assets/NSS/logo128.png",
+        "/Codebreaker/assets/NSS/logo192.png",
+        "/Codebreaker/assets/NSS/logo512.png",
+        "/Codebreaker/assets/NSS/typo-alpha.png",
+        "/Codebreaker/assets/NSS/typo.png",
+        "/Codebreaker/assets/gallery/plant.jpg",
+        "/Codebreaker/assets/gallery/verdade.jpg",
+        "/Codebreaker/assets/gallery/woodimage.jpg",
+        "/Codebreaker/assets/home/button.png",
+        "/Codebreaker/assets/home/cardimg/GC_Col.JPG",
+        "/Codebreaker/assets/home/cardimg/GC_trans.jpg",
+        "/Codebreaker/assets/home/cardimg/VFP.png",
+        "/Codebreaker/assets/home/cardimg/biodivmapping.jpg",
+        "/Codebreaker/assets/home/cardimg/cashless.gif",
+        "/Codebreaker/assets/home/cardimg/colldrive.gif",
+        "/Codebreaker/assets/home/cardimg/ecoganesha.jpg",
+        "/Codebreaker/assets/home/cardimg/visitvastsalya.png",
+        "/Codebreaker/assets/home/pattern.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/Codebreaker/assets/EO/ALP.jpg": "534bf7bfde98e54a06512757bad2a07c2c3385db",
+    "/Codebreaker/assets/EO/NGO.jpeg": "f052fc1e76105982074681e3ccec8f78d4bb4e8a",
+    "/Codebreaker/assets/EO/OLI.png": "e23c284018f5af6d0c7da850b32048d1af110c16",
+    "/Codebreaker/assets/EO/VFP.png": "d478e86ef969f14db6c8da5cb8db1f58a82547bb",
+    "/Codebreaker/assets/EO/muskaan.jpg": "67adea5e993fe25d18af184ad73ae6fa30d577c2",
+    "/Codebreaker/assets/EO/neem_school.jpg": "4070c438848657ccf41cfff3aec27c8d88295953",
+    "/Codebreaker/assets/EO/prayog.jpg": "f56165a61bfac6d8ecc5a330f805578a85353384",
+    "/Codebreaker/assets/NSS/NSS-logo_big.png": "8fe36b663c3708220c57b0a23c71e12e2833a438",
+    "/Codebreaker/assets/NSS/logo1024.png": "3e0f2e4d2262404b1bfd033e79a25424b512120a",
+    "/Codebreaker/assets/NSS/logo128.png": "f1d64a10148001b7e1792d93164d1bef55b04b8b",
+    "/Codebreaker/assets/NSS/logo192.png": "d430fc161a408845f493d595c75da16b57ef0014",
+    "/Codebreaker/assets/NSS/logo512.png": "b24310467e1bb361db996d3dedecb210188ffd5a",
+    "/Codebreaker/assets/NSS/typo-alpha.png": "dac6779ec503f7ba880d607b739db8e0462b7502",
+    "/Codebreaker/assets/NSS/typo.png": "3712eff0f7ccb27a9a5365cbaff62b5567e1c583",
+    "/Codebreaker/assets/gallery/plant.jpg": "8bf159ca0e6fc8b86656721f7280539763d7b81f",
+    "/Codebreaker/assets/gallery/verdade.jpg": "4d683a63573d084d6136cd932ddd482dc8acab6f",
+    "/Codebreaker/assets/gallery/woodimage.jpg": "bd30370421c2d2e6fed2fc7b8586c3da6217626d",
+    "/Codebreaker/assets/home/button.png": "bda0601ec4c57194b14e19a81eba768bccbfa099",
+    "/Codebreaker/assets/home/cardimg/GC_Col.JPG": "0abbd75a1bbd2c2934b285f341c05b21ea713363",
+    "/Codebreaker/assets/home/cardimg/GC_trans.jpg": "abda0aeb0cef853778c7f0a88299bda6e9bb01c8",
+    "/Codebreaker/assets/home/cardimg/VFP.png": "f5c3581e8a2200c68703af222f3abd1768d652a9",
+    "/Codebreaker/assets/home/cardimg/biodivmapping.jpg": "d79dca14f8ca05be94c495dd511dac28a96ed2b5",
+    "/Codebreaker/assets/home/cardimg/cashless.gif": "9d08da42aa5bb610674f72d8d1c8b0b931608d7f",
+    "/Codebreaker/assets/home/cardimg/colldrive.gif": "6af76331f9e69d0a66bd815f7dc7acc7034f12c7",
+    "/Codebreaker/assets/home/cardimg/ecoganesha.jpg": "8b163533221a12776b645209d18e6de1c8970758",
+    "/Codebreaker/assets/home/cardimg/visitvastsalya.png": "445a0a12e40dd3f52c22fef41bde1c8856258ec5",
+    "/Codebreaker/assets/home/pattern.svg": "3fd8a7c55f822591b86efb5eb548d99c36610808",
+    "/Codebreaker/index.html": "adb7fc2877abdfe545a41319390b45aeb9299bcc",
+    "/Codebreaker/main.e7664cf531793645f45c.js": "e868156e103874b2bf03de18a484ecb1f21ad4ea",
+    "/Codebreaker/polyfills.7a0e6866a34e280f48e7.js": "9f0b8341c0a0caec1581da2f255eb5dbb8e12303",
+    "/Codebreaker/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "/Codebreaker/scripts.056e7333a49ddac971c1.js": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "/Codebreaker/styles.49569835073aa09d96fc.css": "87a8497d9b7c78bc0060b5b4b199ce24e9f0ef87"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
