@@ -1,6 +1,7 @@
 ## Webapp for NSS
 **! Gymkhana Server does not support webapps and therefore this repo had to be closed.**
 > This repo was tried during Nautatva's tenure(2018-19). It's future now and possibly, webapps are supported!
+**! Update: Webapps are now supported(2019). Can use this for future references!
 
 [![Build Status](https://travis-ci.com/nautatva/Codebreaker.svg?token=pKMxEv6xXP6Wq3WsQSNF&branch=master)](https://travis-ci.com/nautatva/Codebreaker)
 
